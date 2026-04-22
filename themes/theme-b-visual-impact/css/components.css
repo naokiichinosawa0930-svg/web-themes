@@ -258,7 +258,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://placehold.co/1600x400/0d0d0d/c9a227?text=');
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=400&fit=crop&auto=format');
   background-size: cover;
   background-position: center;
   opacity: 0.3;
