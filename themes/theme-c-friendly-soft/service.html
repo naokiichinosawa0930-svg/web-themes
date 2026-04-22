@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>診療内容 | にこにこ歯科クリニック</title>
+  <meta name="description" content="にこにこ歯科クリニックの診療内容。一般歯科・虫歯治療、小児歯科、予防歯科、ホワイトニング、矯正相談、入れ歯・義歯など幅広く対応しています。">
+
+  <link rel="canonical" href="https://example.com/service.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="診療内容 | にこにこ歯科クリニック">
+  <meta property="og:description" content="一般歯科・小児歯科・予防歯科・ホワイトニング・矯正相談など、幅広い診療に対応しています。">
+  <meta property="og:url"         content="https://example.com/service.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="にこにこ歯科クリニック">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dentist",
+        "@id": "https://example.com/#clinic",
+        "name": "にこにこ歯科クリニック",
+        "url": "https://example.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"診療内容","item":"https://example.com/service.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー（全ページ共通） -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="site-logo__mark" aria-hidden="true">🦷</div>
+        <div class="site-logo__text">
+          <span class="site-logo__name">にこにこ歯科クリニック</span>
+          <span class="site-logo__sub">Nikoniko Dental Clinic</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">クリニック紹介</a></li>
+          <li><a href="service.html" aria-current="page">診療内容</a></li>
+          <li><a href="works.html">症例・ギャラリー</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">ご予約・お問い合わせ</a>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- スライドメニュー（スマホ用） -->
+  <div class="slide-menu" id="slide-menu">
+    <ul class="slide-menu__list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">クリニック紹介</a></li>
+      <li><a href="service.html">診療内容</a></li>
+      <li><a href="works.html">症例・ギャラリー</a></li>
+      <li><a href="news.html">お知らせ</a></li>
+      <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+    </ul>
+    <div class="slide-menu__cta">
+      <a href="contact.html" class="btn btn-primary btn-full">ネット予約はこちら</a>
+    </div>
+    <div class="slide-menu__info">
+      <strong>📞 029-000-0000</strong><br>受付：9:00〜18:00（木・日曜定休）
+    </div>
+  </div>
+  <div class="slide-overlay" id="slide-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li aria-current="page">診療内容</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-label">Services</span>
+      <h1 class="page-hero-title">診療内容</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         診療メニューナビ
+         ============================================ -->
+    <section class="section section--alt" aria-label="診療メニュー">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 760px; margin: 0 auto;" class="fade-in">
+          <a href="#general" class="service-card">
+            <div class="service-card__icon">🦷</div>
+            <h2 class="service-card__title">一般歯科<br>虫歯治療</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+          <a href="#children" class="service-card">
+            <div class="service-card__icon">👶</div>
+            <h2 class="service-card__title">小児歯科</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+          <a href="#prevention" class="service-card">
+            <div class="service-card__icon">🛡️</div>
+            <h2 class="service-card__title">予防歯科</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+          <a href="#whitening" class="service-card">
+            <div class="service-card__icon">✨</div>
+            <h2 class="service-card__title">ホワイトニング</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+          <a href="#orthodontics" class="service-card">
+            <div class="service-card__icon">😁</div>
+            <h2 class="service-card__title">矯正相談</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+          <a href="#denture" class="service-card">
+            <div class="service-card__icon">🌟</div>
+            <h2 class="service-card__title">入れ歯・義歯</h2>
+            <span class="service-card__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         診療詳細
+         ============================================ -->
+    <section class="section" aria-label="診療詳細">
+      <div class="container">
+
+        <!-- 一般歯科・虫歯治療 -->
+        <div class="service-detail fade-in" id="general">
+          <div class="service-detail__img">
+            <!-- ★ 画像: 推奨サイズ 600×450px -->
+            <img
+              src="https://placehold.co/600x450/e0f8f5/3ec4b0?text=General+Dentistry"
+              alt="一般歯科・虫歯治療のイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label">General</span>
+            <h2 class="service-detail__title">一般歯科・虫歯治療</h2>
+            <p class="service-detail__text">
+              虫歯の早期発見・早期治療を大切にしています。できる限り歯を削らない「低侵襲治療（MI治療）」に
+              取り組み、痛みを最小限に抑えながら健康な歯質を守ります。詰め物・被せ物は天然歯に近い素材を
+              取り揃えており、審美性も追求しています。
+            </p>
+            <ul class="service-detail__list">
+              <li>虫歯の診断・治療（コンポジットレジン・セラミック）</li>
+              <li>歯の根の治療（根管治療）</li>
+              <li>抜歯・外科的処置</li>
+              <li>歯周病・歯肉炎の治療</li>
+              <li>知覚過敏・口内炎などのトラブル対応</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 小児歯科 -->
+        <div class="service-detail fade-in" id="children">
+          <div class="service-detail__img">
+            <img
+              src="https://placehold.co/600x450/ffe0eb/ff8fa3?text=Children's+Dentistry"
+              alt="小児歯科のイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label" style="background-color: var(--color-accent-light); color: var(--color-accent-dark);">Children</span>
+            <h2 class="service-detail__title">小児歯科</h2>
+            <p class="service-detail__text">
+              「歯医者は楽しい場所」と感じてもらえることが、生涯の口腔健康の第一歩。怖がらずに
+              治療に臨めるよう、まずはクリニックの雰囲気に慣れることから始めます。
+              お子様のペースに合わせた丁寧な治療で、「また来たい！」と思ってもらえるよう努めています。
+            </p>
+            <ul class="service-detail__list">
+              <li>乳歯・永久歯の虫歯治療</li>
+              <li>シーラント（歯の溝の虫歯予防）</li>
+              <li>フッ素塗布・定期健診</li>
+              <li>歯並び・咬み合わせの相談</li>
+              <li>歯ブラシ指導・食育アドバイス</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 予防歯科 -->
+        <div class="service-detail fade-in" id="prevention">
+          <div class="service-detail__img">
+            <img
+              src="https://placehold.co/600x450/e0f8f5/3ec4b0?text=Preventive+Care"
+              alt="予防歯科のイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label">Prevention</span>
+            <h2 class="service-detail__title">予防歯科</h2>
+            <p class="service-detail__text">
+              治療より予防。定期的なメンテナンスで口腔内の状態を把握し、虫歯・歯周病を未然に防ぐことが
+              大切です。当院では歯科衛生士が丁寧にクリーニングと指導を行い、お口の健康を長期的にサポートします。
+            </p>
+            <ul class="service-detail__list">
+              <li>PMTC（プロフェッショナル クリーニング）</li>
+              <li>スケーリング（歯石取り）</li>
+              <li>フッ素塗布・フッ素洗口</li>
+              <li>ブラッシング指導・TBI</li>
+              <li>3〜6ヶ月ごとの定期健診プログラム</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ホワイトニング -->
+        <div class="service-detail fade-in" id="whitening">
+          <div class="service-detail__img">
+            <img
+              src="https://placehold.co/600x450/fffbe0/b8860b?text=Whitening"
+              alt="ホワイトニングのイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label section-label--yellow">Whitening</span>
+            <h2 class="service-detail__title">ホワイトニング</h2>
+            <p class="service-detail__text">
+              歯の黄ばみ・着色をプロの施術で白く美しく。クリニックで行う「オフィスホワイトニング」と、
+              自宅でじっくりケアする「ホームホワイトニング」から選べます。
+              ご予算とご希望の仕上がりに合わせてご提案します。
+            </p>
+            <ul class="service-detail__list">
+              <li>オフィスホワイトニング（約60〜90分）</li>
+              <li>ホームホワイトニング（専用マウスピース+ジェル）</li>
+              <li>デュアルホワイトニング（オフィス＋ホームの組み合わせ）</li>
+              <li>施術前のカウンセリング・シェードチェック</li>
+              <li>ホワイトニング後のアフターケアアドバイス</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 矯正相談 -->
+        <div class="service-detail fade-in" id="orthodontics">
+          <div class="service-detail__img">
+            <img
+              src="https://placehold.co/600x450/e0ecff/4a7dff?text=Orthodontics"
+              alt="矯正相談のイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label" style="background-color: var(--color-blue-light); color: #2a5dd4;">Orthodontics</span>
+            <h2 class="service-detail__title">矯正相談</h2>
+            <p class="service-detail__text">
+              歯並びが気になる方への初回相談を無料で承っています。お子様の歯並び矯正から
+              大人のマウスピース矯正まで、ライフスタイルに合った治療方法をご提案します。
+              まずはお気軽にご相談ください。
+            </p>
+            <ul class="service-detail__list">
+              <li>初回矯正相談 <span class="price-free">無料</span></li>
+              <li>小児矯正（床矯正・マイオブレース）</li>
+              <li>成人マウスピース矯正（インビザラインなど）</li>
+              <li>ワイヤー矯正の紹介・連携</li>
+              <li>保定（リテーナー）の管理</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 入れ歯・義歯 -->
+        <div class="service-detail fade-in" id="denture">
+          <div class="service-detail__img">
+            <img
+              src="https://placehold.co/600x450/f0fdfb/3ec4b0?text=Denture"
+              alt="入れ歯・義歯のイメージ"
+              width="600" height="450" loading="lazy"
+            >
+          </div>
+          <div class="service-detail__body">
+            <span class="service-detail__label">Denture</span>
+            <h2 class="service-detail__title">入れ歯・義歯</h2>
+            <p class="service-detail__text">
+              入れ歯は正しく合ったものを使うことで、快適な食事と会話を取り戻せます。
+              当院では保険診療の入れ歯から、薄くて目立たない自費の入れ歯まで幅広く対応しています。
+              既存の入れ歯の調整・修理もお気軽にご相談ください。
+            </p>
+            <ul class="service-detail__list">
+              <li>保険義歯（部分入れ歯・総入れ歯）</li>
+              <li>金属床義歯（薄くて丈夫な自費義歯）</li>
+              <li>ノンクラスプデンチャー（見た目が自然な入れ歯）</li>
+              <li>入れ歯の調整・修理・作り直し</li>
+              <li>インプラントの相談・紹介</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+
+    <!-- ============================================
+         料金案内
+         ============================================ -->
+    <section class="section section--alt" aria-labelledby="price-title">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Price</span>
+          <h2 class="section-title" id="price-title">料金案内</h2>
+          <p class="section-desc">保険診療と自費診療の両方に対応しています。詳しくはご来院時にご相談ください。</p>
+        </div>
+
+        <div class="price-section fade-in">
+          <div class="container--narrow">
+
+            <h3 style="font-family: var(--font-heading); font-size: 1rem; font-weight: 800; color: var(--color-text); margin-bottom: 16px; padding-left: 4px;">保険診療（目安）</h3>
+            <table class="price-table" style="margin-bottom: 32px;">
+              <thead>
+                <tr>
+                  <th>診療項目</th>
+                  <th>費用目安（3割負担）</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>初診・検査</td>
+                  <td>約1,000〜3,000円</td>
+                  <td>レントゲン含む場合あり</td>
+                </tr>
+                <tr>
+                  <td>虫歯治療（小〜中程度）</td>
+                  <td>約1,500〜5,000円</td>
+                  <td>部位・大きさにより異なる</td>
+                </tr>
+                <tr>
+                  <td>歯石除去・クリーニング</td>
+                  <td>約1,000〜3,000円</td>
+                  <td>口腔内の状態による</td>
+                </tr>
+                <tr>
+                  <td>根管治療（1歯）</td>
+                  <td>約3,000〜8,000円</td>
+                  <td>歯の種類・回数による</td>
+                </tr>
+                <tr>
+                  <td>部分入れ歯</td>
+                  <td>約5,000〜15,000円</td>
+                  <td>欠損歯数による</td>
+                </tr>
+                <tr>
+                  <td>小児フッ素塗布</td>
+                  <td>約500〜1,500円</td>
+                  <td>3〜6ヶ月ごと推奨</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-family: var(--font-heading); font-size: 1rem; font-weight: 800; color: var(--color-text); margin-bottom: 16px; padding-left: 4px;">自費診療（一例）</h3>
+            <table class="price-table" style="margin-bottom: 16px;">
+              <thead>
+                <tr>
+                  <th>診療項目</th>
+                  <th>費用目安</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>オフィスホワイトニング</td>
+                  <td>22,000円〜</td>
+                  <td>1回（約60〜90分）</td>
+                </tr>
+                <tr>
+                  <td>ホームホワイトニング</td>
+                  <td>16,500円〜</td>
+                  <td>マウスピース＋ジェルセット</td>
+                </tr>
+                <tr>
+                  <td>セラミック（CAD/CAM冠）</td>
+                  <td>44,000円〜</td>
+                  <td>1歯 / 部位により保険可</td>
+                </tr>
+                <tr>
+                  <td>矯正相談</td>
+                  <td><span class="price-free">無料</span></td>
+                  <td>初回カウンセリング</td>
+                </tr>
+                <tr>
+                  <td>マウスピース矯正</td>
+                  <td>330,000円〜</td>
+                  <td>難症例・範囲により異なる</td>
+                </tr>
+                <tr>
+                  <td>金属床義歯</td>
+                  <td>220,000円〜</td>
+                  <td>床の素材により異なる</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="price-note">
+              ※表示金額はすべて税込みです。治療内容・口腔内の状況により金額が変動する場合があります。<br>
+              ※保険診療の金額は3割負担の目安です。年齢・保険の種類により異なります。<br>
+              ※詳しい費用はカウンセリング時にご説明いたします。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         よくあるご質問（FAQ）
+         ============================================ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container--narrow">
+
+        <div class="section-header fade-in">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title" id="faq-title">よくあるご質問</h2>
+        </div>
+
+        <div class="accordion-group fade-in">
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              初めてでも予約できますか？
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">はい、もちろんです。お電話またはネット予約フォームよりお気軽にご予約ください。初診の方には問診票のご記入をお願いしています。ご来院の20分前にお越しいただけると、スムーズにご案内できます。</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              子どもが泣いてしまっても大丈夫ですか？
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">大丈夫です！小児歯科に慣れたスタッフが対応しますのでご安心ください。最初は歯を触らずに器具を見せたり、椅子に座るだけの「練習」から始めることもあります。お子様のペースに合わせますので、焦らず通っていただければと思います。</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              痛い治療はできるだけ避けたいのですが…
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">当院では表面麻酔（ゼリー状の麻酔）を塗ってから注射麻酔を行うため、針を刺す際の痛みを大幅に軽減できます。また電動注射器で薬液をゆっくり注入することで、麻酔時の不快感も抑えています。痛みへの不安がある方は、お気軽にスタッフまでお声がけください。</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              定期健診の頻度はどのくらいですか？
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">一般的には3〜6ヶ月に1回のご来院をお勧めしています。虫歯リスクや歯周病の状態によって適切な間隔は変わりますので、担当歯科衛生士がお一人おひとりに合ったメンテナンス計画をご提案します。</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              ホワイトニングの効果はどのくらい続きますか？
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">個人差がありますが、オフィスホワイトニングで約6ヶ月〜1年程度を目安にお考えください。コーヒーや赤ワインなど色素の強い飲食物を控え、ホームホワイトニングと組み合わせることで効果を長持ちさせることができます。色の後戻りが気になり始めたら、タッチアップ（再施術）もお気軽にご相談ください。</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-q">Q</span>
+              矯正治療は大人でも始められますか？
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="accordion-body">
+              <span class="accordion-a">A</span>
+              <p class="accordion-answer">はい、年齢に関係なく始められます。特にマウスピース矯正は取り外しが可能で目立ちにくく、社会人や主婦の方に人気があります。歯並びや噛み合わせの状態によっては適応外の場合もありますので、まず無料相談にお越しください。</p>
+            </div>
+          </div>
+
+        </div><!-- /.accordion-group -->
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="ご予約">
+      <h2 class="cta-title fade-in">お気軽にご予約・<br>ご相談ください。</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        診療内容についてご不明な点は何でもお聞きください。<br>
+        初回は無料カウンセリングからはじめることもできます。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-accent btn-lg">ネット予約はこちら</a>
+        <div>
+          <a href="tel:029-000-0000" class="cta-tel">029-000-0000</a>
+          <p class="cta-hours">受付時間: 9:00〜18:00（木・日曜定休）</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター（全ページ共通） -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo__name">🦷 にこにこ歯科クリニック</span>
+            <span class="footer-logo__sub">Nikoniko Dental Clinic</span>
+            <p class="footer-desc">お子様から大人まで、笑顔で通えるやさしい歯科医院です。</p>
+          </div>
+          <div>
+            <p class="footer-col-title">Menu</p>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">クリニック紹介</a></li>
+              <li><a href="service.html">診療内容</a></li>
+              <li><a href="works.html">症例・ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Services</p>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#general">一般歯科・虫歯治療</a></li>
+              <li><a href="service.html#children">小児歯科</a></li>
+              <li><a href="service.html#prevention">予防歯科</a></li>
+              <li><a href="service.html#whitening">ホワイトニング</a></li>
+              <li><a href="service.html#orthodontics">矯正相談</a></li>
+              <li><a href="service.html#denture">入れ歯・義歯</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Access</p>
+            <address class="footer-nap">
+              <p class="nap-name">にこにこ歯科クリニック</p>
+              <p class="nap-address">〒310-0000<br>茨城県水戸市○○町1-1-1</p>
+              <p class="nap-tel"><a href="tel:029-000-0000">029-000-0000</a></p>
+              <p class="nap-hours">月〜水・金 9:00〜18:00<br>土 9:00〜17:00 / 木・日 休診</p>
+              <div class="nap-review">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 にこにこ歯科クリニック All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

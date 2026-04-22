@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# インデックスさせないページ
+Disallow: /privacy.html
+
+# サイトマップ（実際のドメインに変更してください）
+Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内）
+       ============================================ -->
+  <title>お知らせ | 創作料理 燈（あかり）</title>
+
+  <!-- ============================================
+       メタディスクリプション（120文字以内）
+       ============================================ -->
+  <meta name="description" content="創作料理 燈からのお知らせ。新メニューの情報、季節限定コース、営業時間変更など最新情報をご確認ください。">
+
+  <!-- canonical URL: 実際のサイトURLに変更してください -->
+  <link rel="canonical" href="https://example.com/news.html">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="お知らせ | 創作料理 燈（あかり）">
+  <meta property="og:description" content="新メニューの情報、季節限定コース、営業時間変更など最新情報をご確認ください。">
+  <meta property="og:url"         content="https://example.com/news.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="創作料理 燈（あかり）">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ============================================
+       Google Analytics 4（GA4）
+       ★ G-XXXXXXXXXX を実際の測定IDに変更してください
+       ============================================ -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- スタイルシート読み込み順序（変更しないでください） -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- 構造化データ（JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://example.com/#restaurant",
+        "name": "創作料理 燈（あかり）",
+        "url": "https://example.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"News","item":"https://example.com/news.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================
+       ヘッダー（全ページ共通）
+       ============================================ -->
+  <header class="site-header is-transparent" id="site-header">
+    <div class="header-inner">
+
+      <a href="index.html" class="site-logo">
+        <span class="logo-en">AKARI</span>
+        <span class="logo-ja">創作料理 燈</span>
+      </a>
+
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html">Gallery</a></li>
+          <li><a href="news.html" aria-current="page">News</a></li>
+          <li><a href="contact.html" class="nav-reserve">Reserve</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- フルスクリーンメニュー（スマホ用） -->
+  <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+    <div class="fullscreen-menu__inner">
+      <button class="fullscreen-menu__close" id="fullscreen-menu-close" aria-label="メニューを閉じる">
+        <span></span><span></span>
+      </button>
+      <nav aria-label="フルスクリーンメニュー">
+        <ul class="fullscreen-menu__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Reserve</a></li>
+        </ul>
+      </nav>
+      <div class="menu-footer-info" aria-hidden="true">
+        <p>創作料理 燈（あかり）</p>
+        <p>03-0000-0000</p>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-overlay" id="fullscreen-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">News</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-en">News</span>
+      <h1 class="page-hero-title">お知らせ</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         お知らせアーカイブ
+         新しい記事を追加するときは、最上部に同じ形式で追記してください
+         ============================================ -->
+    <section class="news-section">
+      <div class="container">
+        <div class="news-archive">
+
+          <!-- ============================================
+               カテゴリバッジの種類:
+               - news-badge             : ゴールド（標準）
+               - news-badge news-badge--info  : 青（お知らせ）
+               - news-badge news-badge--menu  : ゴールド（メニュー）
+               - news-badge news-badge--event : 赤（イベント）
+               - news-badge news-badge--alert : 赤塗り（重要）
+               ============================================ -->
+
+          <!-- ★ 記事1: 最新のお知らせ -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <!-- ★ 投稿日付: YYYY.MM.DD 形式 -->
+              <time class="news-item__date" datetime="2024-12-20">2024.12.20</time>
+              <!-- ★ カテゴリバッジ: 上記から選んでください -->
+              <span class="news-badge news-badge--event">イベント</span>
+            </div>
+            <div class="news-item__body">
+              <!-- ★ 記事タイトル -->
+              <h2 class="news-item__title">
+                <a href="#">年末年始の特別コース（12/28〜1/5）をご用意いたします</a>
+              </h2>
+              <!-- ★ 記事本文の要約（任意） -->
+              <p class="news-item__excerpt">
+                年末年始の特別期間中、通常のおまかせコースに加え、特別な年越しコースをご用意いたします。
+                ご予約はお早めに。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事2 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-12-01">2024.12.01</time>
+              <span class="news-badge news-badge--menu">メニュー</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">冬の新コース「雪景色」12月よりスタートいたします</a>
+              </h2>
+              <p class="news-item__excerpt">
+                冬の旬食材をふんだんに使った新コース「雪景色」が始まります。
+                松葉ガニ・白子・牡蠣など、冬ならではの味覚をお楽しみください。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事3 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-11-15">2024.11.15</time>
+              <span class="news-badge news-badge--info">お知らせ</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">年末の貸し切り予約を受け付けております（12月分）</a>
+              </h2>
+              <p class="news-item__excerpt">
+                12月の忘年会・社内パーティーの貸し切りご予約を承っております。
+                詳細はお電話またはお問い合わせフォームよりご相談ください。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事4 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-10-28">2024.10.28</time>
+              <span class="news-badge news-badge--menu">メニュー</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">秋の旬コース「紅葉」10月末より提供開始</a>
+              </h2>
+              <p class="news-item__excerpt">
+                紅葉の季節に合わせた秋の特別コースを提供開始いたしました。
+                松茸・栗・秋刀魚など秋の味覚をお楽しみください。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事5 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-10-01">2024.10.01</time>
+              <span class="news-badge news-badge--alert">重要</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">10月の臨時休業のお知らせ（10/14 月曜日）</a>
+              </h2>
+              <p class="news-item__excerpt">
+                10月14日（月・祝）は誠に勝手ながら臨時休業とさせていただきます。
+                ご予約済みのお客様には個別にご連絡いたします。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事6 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-09-01">2024.09.01</time>
+              <span class="news-badge news-badge--info">お知らせ</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">ウェブサイトをリニューアルいたしました</a>
+              </h2>
+              <p class="news-item__excerpt">
+                このたびウェブサイトをリニューアルいたしました。
+                今後もより充実した情報をお届けしてまいります。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事7 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-08-15">2024.08.15</time>
+              <span class="news-badge news-badge--event">イベント</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">夏の特別ディナー「夕涼み」8月限定で開催</a>
+              </h2>
+              <p class="news-item__excerpt">
+                夏の夜を彩る特別ディナーを開催いたします。
+                岩牡蠣・鮎・うなぎなど、夏ならではの食材で構成した特別コースです。
+              </p>
+            </div>
+          </article>
+
+          <!-- ★ 記事8 -->
+          <article class="news-item fade-in">
+            <div class="news-item__meta">
+              <time class="news-item__date" datetime="2024-04-01">2024.04.01</time>
+              <span class="news-badge news-badge--info">お知らせ</span>
+            </div>
+            <div class="news-item__body">
+              <h2 class="news-item__title">
+                <a href="#">創作料理 燈、麻布十番にグランドオープン</a>
+              </h2>
+              <p class="news-item__excerpt">
+                本日、創作料理 燈（あかり）が麻布十番にグランドオープンいたしました。
+                心よりお待ちしております。ご予約はお電話またはウェブよりどうぞ。
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /.news-archive -->
+      </div>
+    </section><!-- /.news-section -->
+
+
+    <!-- CTAセクション -->
+    <section class="cta-section" aria-label="ご予約">
+      <div class="container">
+        <span class="cta-en fade-in">Reservation</span>
+        <h2 class="cta-title fade-in fade-in-delay-1">
+          特別な夜を、<br>
+          燈でお過ごしください。
+        </h2>
+        <p class="cta-desc fade-in fade-in-delay-2">
+          ご予約・お問い合わせはこちらから。<br>
+          記念日・接待・ご会食など、心を込めてお迎えいたします。
+        </p>
+        <div class="cta-actions fade-in fade-in-delay-3">
+          <a href="contact.html" class="btn btn-primary btn-lg">ご予約はこちら</a>
+          <a href="service.html" class="btn btn-outline-white btn-lg">コースを見る</a>
+        </div>
+        <p class="cta-note">完全予約制 — 火〜日 17:30〜（月曜定休）</p>
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+
+  <!-- フッター（全ページ共通） -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo-ja">創作料理 燈</span>
+            <span class="footer-logo-en">Akari — Azabu-juban</span>
+            <p class="footer-desc">旬の食材と職人の技が織りなす、麻布十番の創作和食レストラン。</p>
+            <div class="footer-sns">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Menu</h3>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">燈について</a></li>
+              <li><a href="service.html">お料理・コース</a></li>
+              <li><a href="works.html">ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Course</h3>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#omakase">おまかせコース</a></li>
+              <li><a href="service.html#seasonal">季節のコース</a></li>
+              <li><a href="service.html#private">個室・貸し切り</a></li>
+              <li><a href="service.html#pairing">ペアリング</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Access</h3>
+            <address class="footer-nap" style="font-style:normal;">
+              <p class="nap-name">創作料理 燈（あかり）</p>
+              <p class="nap-address">〒106-0045<br>東京都港区麻布十番1-1-1<br>○○ビル 2F</p>
+              <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+              <p class="nap-hours">火〜日 18:00〜（月・火定休）<br>完全予約制</p>
+              <p style="margin-top:16px;">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 創作料理 燈（あかり） All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

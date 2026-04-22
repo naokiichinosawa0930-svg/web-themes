@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ | 株式会社サンプルカンパニー</title>
+  <meta name="description" content="株式会社サンプルカンパニーからのお知らせ・新着情報・プレスリリースをご確認いただけます。">
+  <link rel="canonical" href="https://example.com/news.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="お知らせ | 株式会社サンプルカンパニー">
+  <meta property="og:description" content="株式会社サンプルカンパニーからのお知らせ・新着情報をご確認いただけます。">
+  <meta property="og:url" content="https://example.com/news.html">
+  <meta property="og:image" content="https://example.com/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="お知らせ | 株式会社サンプルカンパニー">
+  <meta name="twitter:description" content="株式会社サンプルカンパニーからのお知らせ・新着情報をご確認いただけます。">
+  <meta name="twitter:image" content="https://example.com/images/ogp.png">
+
+  <!-- GA4（コメントアウト状態） -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+      {"@type":"ListItem","position":2,"name":"お知らせ","item":"https://example.com/news.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ヘッダー（全ページ共通） -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo" aria-label="株式会社サンプルカンパニー トップページへ">
+      <span class="site-logo-text">SampleCompany<span class="site-logo-sub">株式会社サンプルカンパニー</span></span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">会社概要</a>
+      <a href="service.html">サービス</a>
+      <a href="works.html">実績</a>
+      <a href="news.html" aria-current="page">お知らせ</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">会社概要</a>
+    <a href="service.html">サービス</a>
+    <a href="works.html">実績</a>
+    <a href="news.html" aria-current="page">お知らせ</a>
+    <a href="contact.html" class="nav-cta">お問い合わせ</a>
+  </nav>
+</div>
+<div class="header-offset"></div>
+
+<!-- パンくずリスト -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><span aria-current="page">お知らせ</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">お知らせ</h1>
+    <p class="page-hero-desc">News &amp; Topics</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <section class="section" aria-label="お知らせ一覧">
+    <div class="container">
+
+      <div style="max-width: 800px; margin: 0 auto;">
+
+        <!-- ============================================
+             お知らせ一覧
+             新しい投稿を追加する際は、以下の形式でアイテムを追加
+             datetime属性にはYYYY-MM-DD形式で日付を入力
+             カテゴリバッジ: badge-accent（お知らせ）/ badge-primary（実績）/ badge-new（重要）
+             ============================================ -->
+        <ul class="news-archive-list fade-in">
+
+          <!-- お知らせアイテム: 日付の新しい順に並べてください -->
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-04-15">2026.04.15</time>
+              <span class="badge badge-accent">お知らせ</span>
+              <p class="news-archive-title">2026年度 IT活用セミナー「中小企業のDX入門」を開催します</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-04-08">2026.04.08</time>
+              <span class="badge badge-primary">実績</span>
+              <p class="news-archive-title">製造業D社のERP導入プロジェクトが完了しました</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-04-01">2026.04.01</time>
+              <span class="badge badge-accent">お知らせ</span>
+              <p class="news-archive-title">2026年4月より、中小企業向けDX支援プランの料金改定を実施いたします</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-03-20">2026.03.20</time>
+              <span class="badge badge-primary">実績</span>
+              <p class="news-archive-title">クリニックE院 オンライン予約システムの構築が完了しました</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-03-10">2026.03.10</time>
+              <span class="badge badge-accent">メディア掲載</span>
+              <p class="news-archive-title">日経クロステック「中小企業DX最前線」に当社代表のインタビューが掲載されました</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-02-28">2026.02.28</time>
+              <span class="badge badge-accent">お知らせ</span>
+              <p class="news-archive-title">2025年度 お客様満足度調査の結果を公開しました（総合評価4.8/5.0）</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-02-15">2026.02.15</time>
+              <span class="badge badge-primary">実績</span>
+              <p class="news-archive-title">不動産F社 クラウドセキュリティ強化プロジェクトが完了しました</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="news-archive-item">
+              <time class="news-archive-date" datetime="2026-01-10">2026.01.10</time>
+              <span class="badge badge-accent">お知らせ</span>
+              <p class="news-archive-title">年始のご挨拶と2026年の取り組みについて</p>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- フッター（全ページ共通） -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">SampleCompany</span>
+            <span class="footer-brand-sub">株式会社サンプルカンパニー</span>
+          </a>
+          <p class="footer-desc">中小企業のDX推進を専門とするITコンサルティング会社。</p>
+          <div class="footer-sns">
+            <a href="#" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">メニュー</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">サービス</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#consulting">ITコンサルティング</a></li>
+            <li><a href="service.html#cloud">クラウド移行支援</a></li>
+            <li><a href="service.html#development">業務システム開発</a></li>
+            <li><a href="service.html#support">運用・保守サポート</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">会社情報</h3>
+          <address class="footer-nap" style="font-style: normal;">
+            <p class="nap-name">株式会社サンプルカンパニー</p>
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <p class="nap-hours">平日 9:00〜18:00（土日祝休）</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 株式会社サンプルカンパニー All Rights Reserved.</p>
+        <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

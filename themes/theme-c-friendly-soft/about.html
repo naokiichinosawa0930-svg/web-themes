@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内）
+       ============================================ -->
+  <title>クリニック紹介 | にこにこ歯科クリニック</title>
+
+  <!-- メタディスクリプション -->
+  <meta name="description" content="にこにこ歯科クリニックの院長・スタッフ紹介、クリニックのこだわり、施設設備、アクセス情報をご紹介します。">
+
+  <!-- canonical URL -->
+  <link rel="canonical" href="https://example.com/about.html">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="クリニック紹介 | にこにこ歯科クリニック">
+  <meta property="og:description" content="院長・スタッフ紹介、クリニックのこだわり、施設設備をご紹介します。">
+  <meta property="og:url"         content="https://example.com/about.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="にこにこ歯科クリニック">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dentist",
+        "@id": "https://example.com/#clinic",
+        "name": "にこにこ歯科クリニック",
+        "url": "https://example.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"クリニック紹介","item":"https://example.com/about.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー（全ページ共通） -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="site-logo__mark" aria-hidden="true">🦷</div>
+        <div class="site-logo__text">
+          <span class="site-logo__name">にこにこ歯科クリニック</span>
+          <span class="site-logo__sub">Nikoniko Dental Clinic</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html" aria-current="page">クリニック紹介</a></li>
+          <li><a href="service.html">診療内容</a></li>
+          <li><a href="works.html">症例・ギャラリー</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">ご予約・お問い合わせ</a>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- スライドメニュー（スマホ用） -->
+  <div class="slide-menu" id="slide-menu">
+    <ul class="slide-menu__list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">クリニック紹介</a></li>
+      <li><a href="service.html">診療内容</a></li>
+      <li><a href="works.html">症例・ギャラリー</a></li>
+      <li><a href="news.html">お知らせ</a></li>
+      <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+    </ul>
+    <div class="slide-menu__cta">
+      <a href="contact.html" class="btn btn-primary btn-full">ネット予約はこちら</a>
+    </div>
+    <div class="slide-menu__info">
+      <strong>📞 029-000-0000</strong><br>受付：9:00〜18:00（木・日曜定休）
+    </div>
+  </div>
+  <div class="slide-overlay" id="slide-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li aria-current="page">クリニック紹介</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-label">About</span>
+      <h1 class="page-hero-title">クリニック紹介</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         院長からのごあいさつ
+         ============================================ -->
+    <section class="section" aria-labelledby="doctor-title">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Greeting</span>
+          <h2 class="section-title" id="doctor-title">院長ごあいさつ</h2>
+        </div>
+
+        <div class="doctor-profile fade-in">
+
+          <!-- 院長写真 -->
+          <div class="doctor-photo">
+            <!-- ★ 院長写真: 推奨サイズ 400×500px -->
+            <img
+              src="https://placehold.co/400x500/e0f8f5/3ec4b0?text=Doctor+Photo"
+              alt="にこにこ歯科クリニック院長 山田一郎"
+              width="400"
+              height="500"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- 院長情報 -->
+          <div class="doctor-info">
+            <!-- ★ 院長のタイトル -->
+            <span class="doctor-title">院長・歯科医師</span>
+            <!-- ★ 院長名 -->
+            <h2 class="doctor-name-ja">山田 一郎</h2>
+            <p class="doctor-name-en">Ichiro Yamada, D.D.S.</p>
+
+            <!-- ★ 院長のメッセージ: 実際のメッセージに変更してください -->
+            <p class="doctor-message">
+              「歯医者は怖い場所」というイメージを変えたい——そんな思いからにこにこ歯科クリニックを開院しました。
+            </p>
+            <p class="doctor-message">
+              特に子どものころの歯医者体験は、大人になってからのお口の健康意識に大きく影響します。
+              当院では、お子様が「また来たい！」と思えるような楽しい雰囲気づくりを大切にしています。
+            </p>
+            <p class="doctor-message">
+              もちろん大人の患者様にも、丁寧な説明と痛みの少ない治療でご安心いただけるよう努めています。
+              「かかりつけ歯科医」として、皆様のお口の健康をいつまでも守り続けたいと思っています。どうぞお気軽にお越しください。
+            </p>
+
+            <!-- 院長経歴 -->
+            <h3 style="font-size:0.9rem; font-weight:800; color:var(--color-primary-dark); margin:20px 0 12px; letter-spacing:0.04em;">経歴・資格</h3>
+            <!-- ★ 経歴: 実際の経歴に変更してください -->
+            <table class="career-table">
+              <tbody>
+                <tr><td>20XX年</td><td>○○大学歯学部 卒業</td></tr>
+                <tr><td>20XX年</td><td>○○大学附属病院 研修医</td></tr>
+                <tr><td>20XX年</td><td>△△歯科クリニック 勤務</td></tr>
+                <tr><td>20XX年</td><td>にこにこ歯科クリニック 開院</td></tr>
+                <tr><td>資格</td><td>日本歯科医師会会員 / 歯科医師免許 / 小児歯科認定医</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- /.doctor-profile -->
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         クリニックのこだわり（3つのポイント）
+         ============================================ -->
+    <section class="section section--alt" aria-labelledby="philosophy-title">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Our Philosophy</span>
+          <h2 class="section-title" id="philosophy-title">診療のこだわり</h2>
+        </div>
+
+        <!-- こだわり1 -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; margin-bottom:64px;">
+          <div class="fade-in-left">
+            <img
+              src="https://placehold.co/560x400/e0f8f5/3ec4b0?text=Kids+Space"
+              alt="キッズスペースのある待合室"
+              style="width:100%; border-radius:var(--border-radius-lg); box-shadow:var(--shadow-md);"
+              loading="lazy"
+            >
+          </div>
+          <div class="fade-in-right">
+            <span class="section-label">Point 01</span>
+            <!-- ★ こだわりのタイトル・説明 -->
+            <h3 style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:var(--color-text); margin:12px 0 16px; line-height:1.4;">
+              お子様が楽しめる<br>キッズフレンドリーな環境
+            </h3>
+            <p style="font-size:0.95rem; color:var(--color-text-light); line-height:2; margin-bottom:16px;">
+              待合室にはキッズスペースを設置。診察室もカラフルなデザインで、「病院らしくない」雰囲気にしています。
+              緊張してしまいがちなお子様でも、楽しく過ごしながら治療を受けられます。
+            </p>
+            <ul style="list-style:none; padding:0;">
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-primary); font-weight:800;">✓</span>キッズスペース・絵本コーナー完備
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-primary); font-weight:800;">✓</span>治療後のごほうびシール（子ども向け）
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-primary); font-weight:800;">✓</span>小児歯科専門トレーニングを受けたスタッフ
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- こだわり2 -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; margin-bottom:64px; direction:rtl;">
+          <div class="fade-in-left" style="direction:ltr;">
+            <img
+              src="https://placehold.co/560x400/ffe4ea/ff8fa3?text=Pain+Free"
+              alt="最新の医療機器を使った痛みの少ない治療"
+              style="width:100%; border-radius:var(--border-radius-lg); box-shadow:var(--shadow-md);"
+              loading="lazy"
+            >
+          </div>
+          <div class="fade-in-right" style="direction:ltr;">
+            <span class="section-label section-label--accent">Point 02</span>
+            <h3 style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:var(--color-text); margin:12px 0 16px; line-height:1.4;">
+              痛みの少ない治療への<br>こだわり
+            </h3>
+            <p style="font-size:0.95rem; color:var(--color-text-light); line-height:2; margin-bottom:16px;">
+              「痛いから歯医者に行けない」という方のために、痛みを最小限にする取り組みを行っています。
+              表面麻酔の使用・電動注射器の採用など、最新の設備と技術でご不安を取り除きます。
+            </p>
+            <ul style="list-style:none; padding:0;">
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-accent); font-weight:800;">✓</span>表面麻酔（針の刺す痛みを軽減）
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-accent); font-weight:800;">✓</span>電動注射器（ゆっくり均一に注入）
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:var(--color-accent); font-weight:800;">✓</span>笑気麻酔の対応（希望の方に）
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- こだわり3 -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+          <div class="fade-in-left">
+            <img
+              src="https://placehold.co/560x400/fff8e7/ffd166?text=Prevention"
+              alt="定期健診・予防歯科"
+              style="width:100%; border-radius:var(--border-radius-lg); box-shadow:var(--shadow-md);"
+              loading="lazy"
+            >
+          </div>
+          <div class="fade-in-right">
+            <span class="section-label section-label--yellow">Point 03</span>
+            <h3 style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:var(--color-text); margin:12px 0 16px; line-height:1.4;">
+              「治す」より「防ぐ」<br>予防歯科へのこだわり
+            </h3>
+            <p style="font-size:0.95rem; color:var(--color-text-light); line-height:2; margin-bottom:16px;">
+              歯の健康を守る一番の方法は、虫歯や歯周病にならないことです。
+              定期的なメンテナンスと適切なブラッシング指導で、生涯を通じて健康なお口を維持できるよう、
+              丁寧にサポートいたします。
+            </p>
+            <ul style="list-style:none; padding:0;">
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:#b8860b; font-weight:800;">✓</span>3〜6ヶ月ごとの定期健診
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:#b8860b; font-weight:800;">✓</span>プロによる歯のクリーニング（PMTC）
+              </li>
+              <li style="display:flex; gap:8px; padding:6px 0; font-size:var(--font-size-sm); color:var(--color-text-light);">
+                <span style="color:#b8860b; font-weight:800;">✓</span>フッ素塗布・シーラント（お子様）
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         クリニック概要
+         ============================================ -->
+    <section class="section" aria-labelledby="clinic-info-title">
+      <div class="container container--narrow">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Clinic Info</span>
+          <h2 class="section-title" id="clinic-info-title">クリニック概要</h2>
+        </div>
+
+        <!-- ★ クリニック情報テーブル: 実際の情報に変更してください -->
+        <table class="clinic-table fade-in">
+          <tbody>
+            <tr>
+              <th>クリニック名</th>
+              <td>にこにこ歯科クリニック</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>〒310-0000 茨城県水戸市○○町1-1-1</td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td><a href="tel:029-000-0000">029-000-0000</a></td>
+            </tr>
+            <tr>
+              <th>診療時間</th>
+              <td>
+                月〜水・金：9:00〜18:00<br>
+                土：9:00〜17:00（午後は14:00〜17:00）<br>
+                木・日：休診
+              </td>
+            </tr>
+            <tr>
+              <th>休診日</th>
+              <td>木曜日・日曜日・祝日</td>
+            </tr>
+            <tr>
+              <th>最寄り</th>
+              <td>JR水戸駅より車で10分 / 駐車場10台完備</td>
+            </tr>
+            <tr>
+              <th>院長</th>
+              <td>山田 一郎（歯科医師・小児歯科認定医）</td>
+            </tr>
+            <tr>
+              <th>スタッフ</th>
+              <td>歯科医師2名 / 歯科衛生士4名 / 歯科助手3名 / 受付1名</td>
+            </tr>
+            <tr>
+              <th>保険診療</th>
+              <td>保険診療・自由診療ともに対応</td>
+            </tr>
+            <tr>
+              <th>支払い方法</th>
+              <td>現金 / 各種クレジットカード / PayPay</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         アクセス・地図
+         ============================================ -->
+    <section class="section section--alt" aria-labelledby="access-title">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Access</span>
+          <h2 class="section-title" id="access-title">アクセス・地図</h2>
+        </div>
+
+        <div class="access-info fade-in">
+
+          <!-- Googleマップ -->
+          <div class="access-map">
+            <!-- ★ Googleマップ: 実際の埋め込みコードに差し替えてください -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102487.2!2d140.4!3d36.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60220eaf7c7cd38b%3A0x29d08e027a8e58dd!2z5rKW5oi45biC!5e0!3m2!1sja!2sjp!4v1609459200000!5m2!1sja!2sjp"
+              width="100%"
+              height="360"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="にこにこ歯科クリニックの地図"
+            ></iframe>
+          </div>
+
+          <!-- アクセス詳細 -->
+          <div class="access-detail">
+            <div class="access-detail-item">
+              <span class="access-detail-label">住所</span>
+              <address class="access-detail-value">〒310-0000 茨城県水戸市○○町1-1-1</address>
+            </div>
+            <div class="access-detail-item">
+              <span class="access-detail-label">電話</span>
+              <span class="access-detail-value"><a href="tel:029-000-0000">029-000-0000</a></span>
+            </div>
+            <div class="access-detail-item">
+              <span class="access-detail-label">車</span>
+              <span class="access-detail-value">JR水戸駅より車で約10分<br>駐車場10台完備（無料）</span>
+            </div>
+            <div class="access-detail-item">
+              <span class="access-detail-label">バス</span>
+              <span class="access-detail-value">「○○バス停」より徒歩2分</span>
+            </div>
+            <div class="access-detail-item">
+              <span class="access-detail-label">定休日</span>
+              <span class="access-detail-value">木曜日・日曜日・祝日</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="ご予約">
+      <h2 class="cta-title fade-in">まずは、お気軽に<br>ご予約・ご相談ください。</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        初めての方もお電話でお気軽にお問い合わせください。<br>
+        ネット予約は24時間受け付けています。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-accent btn-lg">ネット予約はこちら</a>
+        <div>
+          <a href="tel:029-000-0000" class="cta-tel">029-000-0000</a>
+          <p class="cta-hours">受付時間: 9:00〜18:00（木・日曜定休）</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター（全ページ共通） -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo__name">🦷 にこにこ歯科クリニック</span>
+            <span class="footer-logo__sub">Nikoniko Dental Clinic</span>
+            <p class="footer-desc">お子様から大人まで、笑顔で通えるやさしい歯科医院です。</p>
+          </div>
+          <div>
+            <p class="footer-col-title">Menu</p>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">クリニック紹介</a></li>
+              <li><a href="service.html">診療内容</a></li>
+              <li><a href="works.html">症例・ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Services</p>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#general">一般歯科・虫歯治療</a></li>
+              <li><a href="service.html#children">小児歯科</a></li>
+              <li><a href="service.html#prevention">予防歯科</a></li>
+              <li><a href="service.html#whitening">ホワイトニング</a></li>
+              <li><a href="service.html#orthodontics">矯正相談</a></li>
+              <li><a href="service.html#denture">入れ歯・義歯</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Access</p>
+            <address class="footer-nap">
+              <p class="nap-name">にこにこ歯科クリニック</p>
+              <p class="nap-address">〒310-0000<br>茨城県水戸市○○町1-1-1</p>
+              <p class="nap-tel"><a href="tel:029-000-0000">029-000-0000</a></p>
+              <p class="nap-hours">月〜水・金 9:00〜18:00<br>土 9:00〜17:00 / 木・日 休診</p>
+              <div class="nap-review">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 にこにこ歯科クリニック All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

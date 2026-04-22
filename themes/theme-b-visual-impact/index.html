@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内）
+       お客様の店名・サービスに変更してください
+       ============================================ -->
+  <title>創作料理 燈（あかり）| 麻布十番の創作和食レストラン</title>
+
+  <!-- ============================================
+       メタディスクリプション（120文字以内）
+       検索結果に表示される説明文です
+       ============================================ -->
+  <meta name="description" content="麻布十番の創作和食レストラン「燈（あかり）」。旬の食材と職人の技が織りなす、五感で楽しむコース料理。記念日・接待・ご会食に。完全予約制。">
+
+  <!-- canonical URL: 実際のサイトURLに変更してください -->
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- ============================================
+       OGP設定（SNSシェア時に表示される情報）
+       og:imageは1200×630pxの画像URLを設定してください
+       ============================================ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="創作料理 燈（あかり）| 麻布十番の創作和食レストラン">
+  <meta property="og:description" content="旬の食材と職人の技が織りなす、五感で楽しむコース料理。記念日・接待・ご会食に。完全予約制。">
+  <meta property="og:url"         content="https://example.com/">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="創作料理 燈（あかり）">
+  <meta property="og:locale"      content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="創作料理 燈（あかり）| 麻布十番の創作和食レストラン">
+  <meta name="twitter:description" content="旬の食材と職人の技が織りなす、五感で楽しむコース料理。">
+  <meta name="twitter:image"       content="https://example.com/images/ogp.png">
+
+  <!-- ============================================
+       Google Analytics 4
+       お客様のGA4トラッキングIDに差し替えて、コメントを外してください
+       ============================================ -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- Search Console 所有権確認（コメントアウト状態） -->
+  <!-- <meta name="google-site-verification" content="ここに認証コード"> -->
+
+  <!-- Google Fonts: Noto Serif JP（明朝体） + Cormorant Garamond（英字） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- ============================================
+       構造化データ（LocalBusiness / Restaurant）
+       お客様の店舗情報に差し替えてください
+       ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "創作料理 燈（あかり）",
+    "image": "https://example.com/images/storefront.jpg",
+    "url": "https://example.com",
+    "telephone": "+81-3-0000-0000",
+    "servesCuisine": "和食・創作料理",
+    "priceRange": "¥¥¥¥",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "港区麻布十番1-1-1 燈ビル1F",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "postalCode": "106-0045",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "17:30",
+        "closes": "23:00"
+      }
+    ],
+    "description": "旬の食材と職人の技が織りなす麻布十番の創作和食レストラン。完全予約制。"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================
+     サイトヘッダー
+     透過背景スタート → スクロールで暗くなる設計
+     ナビはハンバーガーのみ（フルスクリーンメニュー）
+     ============================================ -->
+<header class="site-header is-transparent" role="banner">
+  <div class="header-inner">
+
+    <!-- ロゴ: テキストまたは画像に変更可能 -->
+    <!-- ロゴ画像がある場合は下記imgタグのコメントを外して使用 -->
+    <!-- <img src="images/logo.svg" alt="創作料理 燈" style="height:40px;"> -->
+    <a href="index.html" class="site-logo" aria-label="創作料理 燈 トップページへ">
+      <span class="site-logo-ja">燈</span>
+      <span class="site-logo-en">Akari / Azabu-juban</span>
+    </a>
+
+    <!-- ハンバーガーボタン（全画面サイズで表示） -->
+    <button class="hamburger-btn"
+            aria-expanded="false"
+            aria-controls="fullscreen-menu"
+            aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- ============================================
+     フルスクリーンメニュー（スライドイン型）
+     右からスライドして全画面を覆います
+     ============================================ -->
+<div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+  <nav class="fullscreen-nav" aria-label="メインナビゲーション">
+    <!-- ナビリンク: ページに合わせてaria-current="page"を設定 -->
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Menu &amp; Course</a>
+    <a href="works.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html" class="menu-cta">Reservation</a>
+  </nav>
+
+  <!-- メニュー下部の店舗情報 -->
+  <div class="menu-footer-info" aria-hidden="true">
+    <!-- 住所・電話番号: お客様のものに変更 -->
+    <p>東京都港区麻布十番1-1-1</p>
+    <p>TEL 03-0000-0000 &nbsp;|&nbsp; 火〜日 17:30〜 完全予約制</p>
+  </div>
+</div>
+
+
+<main id="main-content">
+
+  <!-- ============================================
+       メインビジュアル（フルスクリーン + パララックス）
+       背景画像: images/hero.jpg を差し替えてください
+       推奨サイズ: 1920×1200px 以上
+       ============================================ -->
+  <section class="hero" aria-label="メインビジュアル">
+
+    <!-- パララックス背景（main.jsが垂直移動を制御） -->
+    <!-- style属性のURLを実際の画像パスに変更してください -->
+    <div class="hero-bg"
+         style="background-image: url('https://placehold.co/1920x1200/0d0d0d/c9a227?text=Hero+Image');"></div>
+
+    <!-- 暗いグラデーションオーバーレイ（文字読みやすさのため） -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- テキストコンテンツ -->
+    <div class="hero-content">
+
+      <!-- 英語ラベル（細い文字） -->
+      <span class="hero-en fade-in">Akari — Creative Japanese Cuisine</span>
+
+      <!-- ============================================
+           キャッチコピー: お客様の言葉に変更してください
+           ============================================ -->
+      <h1 class="hero-title fade-in fade-in-delay-1">
+        <span class="accent">旬</span>の恵みが語る、<br>
+        一皿の物語。
+      </h1>
+
+      <!-- サブコピー: お客様に合わせて変更 -->
+      <p class="hero-desc fade-in fade-in-delay-2">
+        麻布十番の静かな路地に佇む、創作和食の店。<br>
+        その日の最上を、その日だけのコースに。
+      </p>
+
+      <!-- CTAボタン -->
+      <div class="hero-actions fade-in fade-in-delay-3">
+        <a href="contact.html" class="btn btn-primary btn-lg">ご予約はこちら</a>
+        <a href="service.html" class="btn btn-outline-white">お料理を見る</a>
+      </div>
+
+    </div>
+
+    <!-- スクロール案内（アニメーション付き） -->
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- ============================================
+         店舗情報バー（ヒーロー最下部）
+         営業時間・定休日・アクセスを変更してください
+         ============================================ -->
+    <div class="hero-info-bar" aria-label="店舗基本情報">
+      <div class="hero-info-bar-inner">
+        <div class="hero-info-item">
+          <span class="hero-info-label">Open</span>
+          <span class="hero-info-value">火〜日 17:30〜</span>
+        </div>
+        <div class="hero-info-item">
+          <span class="hero-info-label">Close</span>
+          <span class="hero-info-value">月曜定休</span>
+        </div>
+        <div class="hero-info-item">
+          <span class="hero-info-label">Access</span>
+          <span class="hero-info-value">麻布十番駅 徒歩3分</span>
+        </div>
+        <div class="hero-info-item">
+          <span class="hero-info-label">Tel</span>
+          <span class="hero-info-value">03-0000-0000</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================
+       コンセプトセクション（非対称レイアウト）
+       左: イメージ画像 / 右: ダーク背景のテキスト
+       画像: images/concept.jpg を差し替えてください（推奨: 800×600px）
+       ============================================ -->
+  <section aria-label="コンセプト">
+    <div class="concept-layout">
+
+      <!-- 左側: 画像 -->
+      <div class="concept-image-col fade-in-left">
+        <img src="https://placehold.co/800x600/1a1209/c9a227?text=Concept+Image"
+             alt="料理の盛り付けの様子"
+             loading="lazy">
+      </div>
+
+      <!-- 右側: テキスト（ダーク背景） -->
+      <div class="concept-content-col fade-in-right">
+
+        <!-- 装飾的な引用符 -->
+        <p class="concept-quote-mark" aria-hidden="true">"</p>
+
+        <span class="section-en" style="text-align:left;">Our Concept</span>
+
+        <!-- ============================================
+             コンセプト文: お客様の言葉に変更してください
+             ============================================ -->
+        <p class="concept-text concept-text--large" style="margin-top: 20px;">
+          産地から直送された旬の素材と、<br>
+          長年磨かれた職人の技。
+        </p>
+        <p class="concept-text">
+          「燈」が大切にするのは、食材そのものが持つ力を最大限に引き出すこと。
+          余計な飾りを取り除いた先に現れる、素材の真の味を
+          季節のコース料理としてお届けします。
+        </p>
+        <p class="concept-text">
+          ご来店のたびに異なる一期一会の料理を、
+          どうか心ゆくまでお楽しみください。
+        </p>
+
+        <div style="margin-top: 40px;">
+          <a href="about.html" class="btn btn-outline-gold">燈について詳しく</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       おすすめ料理セクション
+       画像: images/menu-*.jpg を差し替えてください
+       ============================================ -->
+  <section class="section section--alt" aria-label="おすすめのお料理">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-en">Featured Menu</span>
+        <h2 class="section-title">おすすめのお料理</h2>
+        <p class="section-desc">その日の最高の素材で、その日だけのコースをご用意しています</p>
+      </div>
+
+      <!-- フィーチャードメニューグリッド -->
+      <div class="featured-menu-grid">
+
+        <!-- 大きいカード（横幅いっぱい） -->
+        <article class="menu-card menu-card--large fade-in">
+          <!-- 画像: images/menu-signature.jpg を差し替えてください（推奨: 800×500px） -->
+          <div class="menu-card-image img-darken">
+            <img src="https://placehold.co/800x500/0d0d0d/c9a227?text=Signature+Dish"
+                 alt="燈のシグネチャーディッシュ"
+                 loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-card-price">Signature</p>
+            <!-- 料理名・説明: お客様に合わせて変更 -->
+            <h3 class="menu-card-title">旬野菜と鮑の<br>炭火焼き</h3>
+            <p class="menu-card-desc">
+              三重県産の天然鮑を炭火でゆっくりと焼き上げ、
+              その日の旬野菜とともに。磯の香りが漂う、燈を代表する一皿です。
+            </p>
+            <div style="margin-top: 32px;">
+              <a href="service.html" class="btn btn-outline-gold btn-sm">コースを見る</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 通常カード1 -->
+        <article class="menu-card fade-in fade-in-delay-1">
+          <!-- 画像: images/menu-starter.jpg を差し替えてください -->
+          <div class="menu-card-image">
+            <img src="https://placehold.co/600x400/1a1209/c9a227?text=Starter"
+                 alt="季節の前菜"
+                 loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-card-price">Starter</p>
+            <h3 class="menu-card-title">季節の前菜 盛り合わせ</h3>
+            <p class="menu-card-desc">
+              旬の食材を活かした8種の前菜を少量ずつ丁寧に。
+              季節の移ろいを舌で感じてください。
+            </p>
+          </div>
+        </article>
+
+        <!-- 通常カード2 -->
+        <article class="menu-card fade-in fade-in-delay-2">
+          <!-- 画像: images/menu-main.jpg を差し替えてください -->
+          <div class="menu-card-image">
+            <img src="https://placehold.co/600x400/1a1209/c9a227?text=Main"
+                 alt="黒毛和牛の低温調理"
+                 loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-card-price">Main</p>
+            <h3 class="menu-card-title">黒毛和牛の低温調理</h3>
+            <p class="menu-card-desc">
+              厳選した黒毛和牛を72時間かけて低温調理。
+              肉本来の旨味を損なわず、とろける食感に。
+            </p>
+          </div>
+        </article>
+
+        <!-- 通常カード3 -->
+        <article class="menu-card fade-in fade-in-delay-3">
+          <!-- 画像: images/menu-dessert.jpg を差し替えてください -->
+          <div class="menu-card-image">
+            <img src="https://placehold.co/600x400/1a1209/c9a227?text=Dessert"
+                 alt="季節の和菓子"
+                 loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-card-price">Dessert</p>
+            <h3 class="menu-card-title">季節の和菓子と抹茶</h3>
+            <p class="menu-card-desc">
+              職人が手がける季節の上生菓子と、
+              石臼で挽いた一碗の抹茶で締めくくります。
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       こだわりセクション（ダーク背景・3カラム）
+       ============================================ -->
+  <section class="section--dark story-section" aria-label="燈のこだわり">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-en">Our Story</span>
+        <h2 class="section-title">燈のこだわり</h2>
+      </div>
+
+      <div class="story-grid">
+
+        <!-- こだわり1: お客様の強みに変更 -->
+        <div class="story-item fade-in">
+          <p class="story-num" aria-hidden="true">01</p>
+          <h3 class="story-title">産地直送の<br>旬素材</h3>
+          <p class="story-text">
+            全国の信頼する農家・漁師と直接契約。
+            農薬・添加物不使用の食材を、収穫の翌日には厨房へ。
+            素材が持つ本来の味を、そのままお届けします。
+          </p>
+        </div>
+
+        <!-- こだわり2 -->
+        <div class="story-item fade-in fade-in-delay-1">
+          <p class="story-num" aria-hidden="true">02</p>
+          <h3 class="story-title">伝統技法と<br>現代の感覚</h3>
+          <p class="story-text">
+            江戸時代から続く「引き算の美学」を軸に、
+            フランス料理の技法を融合。
+            伝統と革新が交差する、唯一無二の一皿をご提案します。
+          </p>
+        </div>
+
+        <!-- こだわり3 -->
+        <div class="story-item fade-in fade-in-delay-2">
+          <p class="story-num" aria-hidden="true">03</p>
+          <h3 class="story-title">空間が完成させる<br>美食体験</h3>
+          <p class="story-text">
+            料理だけでなく、器・照明・音楽・サービスすべてが
+            「燈」という体験を形作ります。
+            五感すべてで感じてもらえる空間を心がけています。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       写真ストリップ（大胆な全幅画像レイアウト）
+       各画像: images/gallery-*.jpg を差し替えてください
+       ============================================ -->
+  <section aria-label="料理・店内写真">
+    <div class="media-strip">
+
+      <!-- 左: 縦2段分の大きい画像 -->
+      <div class="media-strip-item span-row">
+        <img src="https://placehold.co/800x684/0d0d0d/c9a227?text=Gallery+01"
+             alt="旬の食材を使った前菜"
+             loading="lazy">
+      </div>
+
+      <!-- 右上 -->
+      <div class="media-strip-item">
+        <img src="https://placehold.co/600x340/1a1209/c9a227?text=Gallery+02"
+             alt="職人が盛り付ける様子"
+             loading="lazy">
+      </div>
+
+      <!-- 右上2 -->
+      <div class="media-strip-item">
+        <img src="https://placehold.co/600x340/0d0d0d/c9a227?text=Gallery+03"
+             alt="炭火焼きの鮑"
+             loading="lazy">
+      </div>
+
+      <!-- 右下1 -->
+      <div class="media-strip-item">
+        <img src="https://placehold.co/600x340/1a1209/c9a227?text=Gallery+04"
+             alt="落ち着いた店内の雰囲気"
+             loading="lazy">
+      </div>
+
+      <!-- 右下2 -->
+      <div class="media-strip-item">
+        <img src="https://placehold.co/600x340/0d0d0d/c9a227?text=Gallery+05"
+             alt="季節の和菓子"
+             loading="lazy">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       お客様の声（ダーク背景）
+       実際のお客様の声に差し替えてください
+       ============================================ -->
+  <section class="section--dark section" aria-label="お客様の声">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-en">Guest Reviews</span>
+        <h2 class="section-title">お客様の声</h2>
+      </div>
+
+      <div class="voice-grid">
+
+        <article class="voice-card fade-in">
+          <div class="voice-stars" aria-label="評価5点">
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span>
+          </div>
+          <!-- お客様の声: 実際の口コミに差し替えてください -->
+          <p class="voice-text">
+            記念日に利用させていただきました。料理はもちろん、
+            お祝いのサプライズまで準備していただき感激。
+            また絶対に来ます。
+          </p>
+          <span class="voice-author">A.S 様</span>
+          <span class="voice-date">2026年3月</span>
+        </article>
+
+        <article class="voice-card fade-in fade-in-delay-1">
+          <div class="voice-stars" aria-label="評価5点">
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span>
+          </div>
+          <p class="voice-text">
+            接待で利用。お客様にも大変喜んでいただき、商談も成功しました。
+            コースのバランスが素晴らしく、日本酒との相性も完璧でした。
+          </p>
+          <span class="voice-author">T.K 様</span>
+          <span class="voice-date">2026年2月</span>
+        </article>
+
+        <article class="voice-card fade-in fade-in-delay-2">
+          <div class="voice-stars" aria-label="評価5点">
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span><span class="voice-star">★</span>
+            <span class="voice-star">★</span>
+          </div>
+          <p class="voice-text">
+            季節のコースが毎回違うので、何度来ても新鮮。
+            シェフの食材への愛情が料理から伝わってきます。半年に一度は必ず来ています。
+          </p>
+          <span class="voice-author">M.Y 様</span>
+          <span class="voice-date">2026年1月</span>
+        </article>
+
+      </div>
+
+      <!-- ============================================
+           Google口コミ誘導ボタン（MEO対策用）
+           place_idをお客様のものに変更してコメントを外してください
+           place_idの取得方法はREADME.mdに記載
+           ============================================ -->
+      <!--
+      <div style="text-align:center; margin-top:48px;">
+        <p style="font-size:0.85rem; color:rgba(255,255,255,0.4); margin-bottom:16px; letter-spacing:0.1em;">
+          ご来店いただいたお客様へ
+        </p>
+        <a href="https://search.google.com/local/writereview?placeid=ここにPLACE_ID"
+           class="btn btn-review" target="_blank" rel="noopener noreferrer">
+          Googleで口コミを書く
+        </a>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       お知らせセクション（最新3件）
+       news.htmlに追加した内容と合わせて更新してください
+       ============================================ -->
+  <section class="section" aria-label="お知らせ">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-en">News &amp; Topics</span>
+        <h2 class="section-title">お知らせ</h2>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto;">
+        <ul class="news-list">
+
+          <!-- お知らせアイテム: 日付・種別・タイトルを変更してください -->
+          <li>
+            <a href="news.html" class="news-item">
+              <time class="news-date" datetime="2026-04-15">2026.04.15</time>
+              <span class="news-badge">お知らせ</span>
+              <p class="news-title">2026年5月より、新コース「燈の夏」を開始いたします</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html" class="news-item">
+              <time class="news-date" datetime="2026-04-01">2026.04.01</time>
+              <span class="news-badge">営業案内</span>
+              <p class="news-title">ゴールデンウィーク期間（4/29〜5/6）の営業について</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html" class="news-item">
+              <time class="news-date" datetime="2026-03-15">2026.03.15</time>
+              <span class="news-badge">メディア掲載</span>
+              <p class="news-title">グルメ雑誌「東京の名店100選 2026年版」に掲載されました</p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div style="text-align:center; margin-top:40px;">
+          <a href="news.html" class="btn btn-outline-dark btn-sm">お知らせ一覧を見る</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CTAセクション（ご予約誘導）
+       ============================================ -->
+  <section class="cta-section" aria-label="ご予約">
+    <div class="container">
+      <span class="cta-en fade-in">Reservation</span>
+      <!-- CTAタイトル: お客様に合わせて変更 -->
+      <h2 class="cta-title fade-in fade-in-delay-1">
+        特別な夜のために、<br>
+        席をご用意しています。
+      </h2>
+      <p class="cta-desc fade-in fade-in-delay-2">
+        完全予約制のため、お早めのご予約をお勧めします。<br>
+        記念日のサプライズ・アレルギー対応など、ご要望はお気軽にご相談ください。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-3">
+        <a href="contact.html" class="btn btn-primary btn-lg">ご予約・お問い合わせ</a>
+        <a href="tel:03-0000-0000" class="btn btn-outline-white btn-lg">☎ 03-0000-0000</a>
+      </div>
+      <!-- 受付時間: お客様に合わせて変更 -->
+      <p class="cta-note">受付時間: 火〜日 11:00〜21:00（月曜定休）</p>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ============================================
+     サイトフッター（全ページ共通）
+     ============================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- ブランド情報 -->
+        <div>
+          <span class="footer-logo-ja">創作料理 燈</span>
+          <span class="footer-logo-en">Akari — Azabu-juban</span>
+          <p class="footer-desc">
+            旬の食材と職人の技が織りなす、麻布十番の創作和食レストラン。
+            一皿一皿に物語を込めて、皆様のお越しをお待ちしております。
+          </p>
+          <!-- SNSリンク: URLをお客様のものに変更 -->
+          <div class="footer-sns" aria-label="SNSリンク">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <!-- ナビゲーション -->
+        <div>
+          <h3 class="footer-col-title">Menu</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">燈について</a></li>
+            <li><a href="service.html">お料理・コース</a></li>
+            <li><a href="works.html">ギャラリー</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <!-- コース一覧 -->
+        <div>
+          <h3 class="footer-col-title">Course</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#omakase">おまかせコース</a></li>
+            <li><a href="service.html#seasonal">季節のコース</a></li>
+            <li><a href="service.html#private">個室・貸し切り</a></li>
+            <li><a href="service.html#pairing">ペアリング</a></li>
+          </ul>
+        </div>
+
+        <!-- ============================================
+             NAP情報（MEO対策用）
+             Googleビジネスプロフィールと完全一致させること
+             全角/半角・スペース・記号の表記も一致させること
+             ============================================ -->
+        <div>
+          <h3 class="footer-col-title">Access</h3>
+          <address class="footer-nap" style="font-style:normal;">
+            <!-- 店名: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-name">創作料理 燈（あかり）</p>
+            <!-- 住所: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-address">〒106-0045<br>東京都港区麻布十番1-1-1<br>燈ビル1F</p>
+            <!-- 電話番号: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <!-- 営業時間 -->
+            <p class="nap-hours">火〜日 17:30〜（月曜定休）<br>完全予約制</p>
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <!-- コピーライト: 店名と年を変更 -->
+        <p class="footer-copy">&copy; 2026 創作料理 燈（あかり） All Rights Reserved.</p>
+        <nav class="footer-legal" aria-label="法的情報">
+          <a href="privacy.html">プライバシーポリシー</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript（defer属性でHTMLの読み込みを妨げません） -->
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

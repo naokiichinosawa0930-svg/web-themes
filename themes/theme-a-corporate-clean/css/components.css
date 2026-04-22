@@ -1,0 +1,726 @@
+/* ============================================
+   components.css - ボタン・カード・バッジ等の共通部品
+   サイト全体で繰り返し使われるUI部品を定義しています
+   ============================================ */
+
+
+/* ============================================
+   コンテナ（各セクションの最大幅と中央寄せ）
+   ============================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+}
+
+
+/* ============================================
+   セクション共通スタイル
+   ============================================ */
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section--dark {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+/* セクションタイトル */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.section--dark .section-title {
+  color: var(--color-white);
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.section--dark .section-desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* セクションタイトル下の装飾ライン */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 16px auto 0;
+}
+
+.section-title--left::after {
+  margin-left: 0;
+}
+
+
+/* ============================================
+   ボタン
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-speed) var(--transition-ease);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* プライマリボタン（メインカラー） */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* セカンダリボタン（アウトライン） */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* ホワイトボタン（ダーク背景の上で使用） */
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* 口コミ誘導ボタン */
+.btn-review {
+  background-color: #4285f4;
+  color: var(--color-white);
+  border-color: #4285f4;
+  font-size: 0.9rem;
+}
+
+.btn-review:hover {
+  background-color: #3367d6;
+  border-color: #3367d6;
+}
+
+/* ボタンサイズ */
+.btn-sm {
+  padding: 10px 20px;
+  font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+  padding: 18px 40px;
+  font-size: 1rem;
+}
+
+
+/* ============================================
+   カード
+   ============================================ */
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-speed) var(--transition-ease),
+              box-shadow var(--transition-speed) var(--transition-ease);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-image {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-speed) var(--transition-ease);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-primary-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+
+/* ============================================
+   バッジ・タグ
+   ============================================ */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary {
+  background-color: rgba(26, 82, 118, 0.1);
+  color: var(--color-primary);
+}
+
+.badge-accent {
+  background-color: rgba(230, 126, 34, 0.1);
+  color: var(--color-accent);
+}
+
+.badge-new {
+  background-color: #e74c3c;
+  color: var(--color-white);
+}
+
+
+/* ============================================
+   パンくずリスト
+   ============================================ */
+.breadcrumb {
+  padding: 14px 0;
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.breadcrumb-list li + li::before {
+  content: '›';
+  margin-right: 4px;
+  color: var(--color-border);
+}
+
+.breadcrumb-list a {
+  color: var(--color-primary-light);
+  transition: color var(--transition-speed);
+}
+
+.breadcrumb-list a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb-list [aria-current="page"] {
+  color: var(--color-text-light);
+}
+
+
+/* ============================================
+   ページタイトルヒーロー（下層ページ共通）
+   ============================================ */
+.page-hero {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: var(--color-white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero-title {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.page-hero-desc {
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+
+/* ============================================
+   グリッドレイアウト
+   ============================================ */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+
+/* ============================================
+   テーブル（会社概要等）
+   ============================================ */
+.info-table {
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+}
+
+.info-table tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.info-table th,
+.info-table td {
+  padding: 18px 20px;
+  font-size: 0.95rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.info-table th {
+  width: 200px;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--color-bg-alt);
+  white-space: nowrap;
+}
+
+.info-table td {
+  color: var(--color-text-light);
+}
+
+
+/* ============================================
+   アコーディオン（FAQ用）
+   ============================================ */
+.accordion {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  transition: background-color var(--transition-speed);
+}
+
+.accordion-trigger:hover {
+  background-color: var(--color-bg-alt);
+}
+
+.accordion-trigger[aria-expanded="true"] {
+  background-color: var(--color-bg-alt);
+  color: var(--color-primary);
+}
+
+.accordion-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: transform var(--transition-speed);
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: '';
+  position: absolute;
+  background-color: currentColor;
+  border-radius: 2px;
+}
+
+.accordion-icon::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.accordion-icon::after {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+  transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon::after {
+  opacity: 0;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.accordion-body {
+  display: none;
+  padding: 0 24px 22px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.accordion-body.is-open {
+  display: block;
+}
+
+
+/* ============================================
+   タイムライン（沿革等）
+   ============================================ */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-white);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.timeline-date {
+  font-family: var(--font-en);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary-light);
+  margin-bottom: 4px;
+}
+
+.timeline-content {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+
+/* ============================================
+   フォーム部品
+   ============================================ */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.form-required {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.form-optional {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light);
+  margin-left: 8px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+  appearance: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
+}
+
+.form-control.is-error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 160px;
+}
+
+select.form-control {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235d6d7e' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.form-error-msg {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: #e74c3c;
+  margin-top: 6px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.form-checkbox-label {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.form-checkbox-label a {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+
+/* ============================================
+   素材品質カバー用CSS
+   お客様の写真の品質が低い場合に使用するクラス
+   HTMLのimgタグに追加するだけで効果が適用されます
+   ============================================ */
+
+/* 写真にブランドカラーを半透明で重ねる */
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.img-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--color-primary);
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* 写真をモノクロにする */
+.img-mono img {
+  filter: grayscale(100%);
+}
+
+/* 写真をぼかして背景として使う */
+.img-blur-bg img {
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+/* 写真を暗くしてテキストを読みやすくする */
+.img-darken {
+  position: relative;
+}
+.img-darken::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.6) 100%
+  );
+  pointer-events: none;
+}
+
+
+/* ============================================
+   スクロールアニメーション用クラス
+   scroll-animation.js から制御されます
+   ============================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--transition-ease),
+              transform 0.6s var(--transition-ease);
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+
+
+/* ============================================
+   ユーティリティクラス
+   ============================================ */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.text-primary { color: var(--color-primary); }
+.text-accent  { color: var(--color-accent); }
+.text-light   { color: var(--color-text-light); }
+.text-white   { color: var(--color-white); }
+
+.font-bold { font-weight: 700; }
+
+.mt-0  { margin-top: 0; }
+.mt-sm { margin-top: 16px; }
+.mt-md { margin-top: 32px; }
+.mt-lg { margin-top: 48px; }
+
+.mb-0  { margin-bottom: 0; }
+.mb-sm { margin-bottom: 16px; }
+.mb-md { margin-bottom: 32px; }
+.mb-lg { margin-bottom: 48px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

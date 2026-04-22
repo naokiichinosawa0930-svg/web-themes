@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内で設定）
+       お客様の会社名と主要サービスを含めてください
+       ============================================ -->
+  <title>株式会社サンプルカンパニー | ITコンサルティング・DXソリューション</title>
+
+  <!-- ============================================
+       メタディスクリプション（120文字以内で設定）
+       検索結果に表示される説明文です。
+       サービスの強みと対象顧客を簡潔に書いてください
+       ============================================ -->
+  <meta name="description" content="株式会社サンプルカンパニーは、中小企業のDX推進を専門とするITコンサルティング会社です。業務効率化からクラウド移行まで、貴社の課題に合わせた最適なITソリューションを提供します。">
+
+  <!-- canonical URL: このページの正規URLに変更してください -->
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- ============================================
+       OGP設定（SNSでシェアされたときに表示される情報）
+       og:imageには1200×630pxの画像URLを設定してください
+       ============================================ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="株式会社サンプルカンパニー | ITコンサルティング・DXソリューション">
+  <meta property="og:description" content="中小企業のDX推進を専門とするITコンサルティング会社。業務効率化からクラウド移行まで最適なITソリューションを提供します。">
+  <meta property="og:url"         content="https://example.com/">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="株式会社サンプルカンパニー">
+  <meta property="og:locale"      content="ja_JP">
+
+  <!-- Twitter Card設定 -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="株式会社サンプルカンパニー | ITコンサルティング・DXソリューション">
+  <meta name="twitter:description" content="中小企業のDX推進を専門とするITコンサルティング会社。">
+  <meta name="twitter:image"       content="https://example.com/images/ogp.png">
+
+  <!-- ============================================
+       Google Analytics 4
+       お客様のGA4トラッキングIDに差し替えて、コメントを外してください
+       ============================================ -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- ============================================
+       Google Search Console 所有権確認
+       ============================================ -->
+  <!-- <meta name="google-site-verification" content="ここに認証コード"> -->
+
+  <!-- Google Fonts: Noto Sans JP + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS読み込み順: reset → variables → components → style → responsive -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- ============================================
+       構造化データ（SEO用）
+       Organizationタイプ: 一般企業向け
+       店舗・飲食店の場合はLocalBusinessに切り替えてください
+       （コメント内のLocalBusiness版を参照）
+       各項目をお客様情報に差し替えてください
+       ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "株式会社サンプルカンパニー",
+    "url": "https://example.com",
+    "logo": "https://example.com/images/logo.png",
+    "description": "中小企業のDX推進を専門とするITコンサルティング会社",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "千代田区丸の内1-1-1 サンプルビル10F",
+      "addressLocality": "千代田区",
+      "addressRegion": "東京都",
+      "postalCode": "100-0005",
+      "addressCountry": "JP"
+    },
+    "telephone": "+81-3-0000-0000",
+    "sameAs": []
+  }
+  </script>
+
+  <!--
+  【LocalBusiness版（店舗・飲食店向け）】
+  上記のOrganization構造化データをこちらに差し替えてください
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "店舗名をここに",
+    "image": "https://example.com/images/storefront.jpg",
+    "url": "https://example.com",
+    "telephone": "+81-00-0000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "住所をここに",
+      "addressLocality": "市区町村",
+      "addressRegion": "都道府県",
+      "postalCode": "000-0000",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+  -->
+</head>
+<body>
+
+<!-- ============================================
+     サイトヘッダー（全ページ共通）
+     ロゴとナビゲーションメニュー
+     ============================================ -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+
+    <!-- ロゴ: テキストまたは画像に変更可能 -->
+    <a href="index.html" class="site-logo" aria-label="株式会社サンプルカンパニー トップページへ">
+      <!-- ロゴ画像がある場合は下記のimgタグのコメントを外して使用 -->
+      <!-- <img src="images/logo.svg" alt="株式会社サンプルカンパニー" class="site-logo-img"> -->
+      <span class="site-logo-text">
+        SampleCompany
+        <span class="site-logo-sub">株式会社サンプルカンパニー</span>
+      </span>
+    </a>
+
+    <!-- PCナビゲーション -->
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">会社概要</a>
+      <a href="service.html">サービス</a>
+      <a href="works.html">実績</a>
+      <a href="news.html">お知らせ</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+
+    <!-- ハンバーガーボタン（スマホのみ表示） -->
+    <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">会社概要</a>
+    <a href="service.html">サービス</a>
+    <a href="works.html">実績</a>
+    <a href="news.html">お知らせ</a>
+    <a href="contact.html" class="nav-cta">お問い合わせ</a>
+  </nav>
+</div>
+
+<!-- メインコンテンツ -->
+<main id="main-content">
+
+  <!-- ============================================
+       メインビジュアル（ヒーロー）セクション
+       キャッチコピーとサブコピーを変更してください
+       右側の画像: images/hero.jpg を差し替えてください
+       ============================================ -->
+  <section class="hero" aria-label="メインビジュアル">
+    <div class="hero-inner">
+
+      <!-- 左側: テキストコンテンツ -->
+      <div class="hero-content fade-in">
+        <!-- 業種ラベル: お客様の業種に変更 -->
+        <span class="hero-label">IT Consulting &amp; DX Solutions</span>
+
+        <!-- キャッチコピー: お客様の強みを一言で表す -->
+        <h1 class="hero-title">
+          中小企業の<span class="highlight">DX推進</span>を<br>
+          伴走型で支援する
+        </h1>
+
+        <!-- サブコピー: サービスの特徴を補足説明 -->
+        <p class="hero-desc">
+          業務効率化・クラウド移行・システム導入まで、<br>
+          貴社の課題を深く理解した上で最適なITソリューションをご提案。<br>
+          導入後の定着まで、一貫してサポートします。
+        </p>
+
+        <!-- CTAボタン -->
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">無料相談を予約する</a>
+          <a href="service.html" class="btn btn-white btn-lg">サービス詳細を見る</a>
+        </div>
+
+        <!-- 実績数値 -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <p class="hero-stat-num">150<span>社+</span></p>
+            <p class="hero-stat-label">支援実績</p>
+          </div>
+          <div class="hero-stat">
+            <p class="hero-stat-num">98<span>%</span></p>
+            <p class="hero-stat-label">顧客満足度</p>
+          </div>
+          <div class="hero-stat">
+            <p class="hero-stat-num">12<span>年</span></p>
+            <p class="hero-stat-label">業界経験</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右側: ビジュアル画像 -->
+      <!-- 画像: images/hero.jpg を差し替えてください（推奨サイズ: 800x600px） -->
+      <div class="hero-visual fade-in fade-in-delay-2">
+        <div class="hero-image-main img-darken">
+          <img src="https://placehold.co/800x600/1a5276/ffffff?text=Hero+Image"
+               alt="ITコンサルティングの支援現場"
+               loading="eager">
+        </div>
+
+        <!-- 浮き出しバッジ（任意で変更・削除可） -->
+        <div class="hero-badge">
+          <div class="hero-badge-icon">🏆</div>
+          <div class="hero-badge-text">
+            <strong>DX認定事業者</strong>
+            <span>経済産業省認定</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       サービス概要セクション
+       3〜4つのサービスをカード形式で表示
+       アイコンはemojiまたは画像に変更可能
+       ============================================ -->
+  <section class="section" aria-label="サービス概要">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <!-- セクションタイトル: お客様の業種に合わせて変更 -->
+        <h2 class="section-title">提供サービス</h2>
+        <p class="section-desc">貴社のDX推進を段階的に、確実にサポートします</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- サービスカード1 -->
+        <div class="service-card fade-in">
+          <!-- アイコン: emojiまたはSVGアイコンに変更 -->
+          <div class="service-icon" aria-hidden="true">💡</div>
+          <h3 class="service-card-title">ITコンサルティング</h3>
+          <p class="service-card-text">
+            現状分析から課題抽出、解決策の立案・実行支援まで。
+            社内IT部門がない企業でも、外部CIOとして経営視点でITを支援します。
+          </p>
+          <a href="service.html#consulting" class="service-card-link">詳しく見る →</a>
+        </div>
+
+        <!-- サービスカード2 -->
+        <div class="service-card fade-in fade-in-delay-1">
+          <div class="service-icon" aria-hidden="true">☁️</div>
+          <h3 class="service-card-title">クラウド移行支援</h3>
+          <p class="service-card-text">
+            オンプレミスからクラウドへの移行を、セキュリティとコストを最適化しながら
+            段階的に推進。停止リスクを最小化した移行計画を策定します。
+          </p>
+          <a href="service.html#cloud" class="service-card-link">詳しく見る →</a>
+        </div>
+
+        <!-- サービスカード3 -->
+        <div class="service-card fade-in fade-in-delay-2">
+          <div class="service-icon" aria-hidden="true">⚙️</div>
+          <h3 class="service-card-title">業務システム開発</h3>
+          <p class="service-card-text">
+            既製品では対応できない独自業務に対応するシステムを開発。
+            現場ヒアリングを重視し、実際に使われるシステムを構築します。
+          </p>
+          <a href="service.html#development" class="service-card-link">詳しく見る →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       強み・特徴セクション
+       会社・サービスの差別化ポイントを記載
+       左: 画像、右: テキストのレイアウト
+       ============================================ -->
+  <section class="section section--alt" aria-label="私たちの強み">
+    <div class="container">
+
+      <div class="strengths-layout">
+
+        <!-- 左側: イメージ画像 -->
+        <!-- 画像: images/strengths.jpg を差し替えてください（推奨サイズ: 600x450px） -->
+        <div class="strengths-image fade-in">
+          <img src="https://placehold.co/600x450/1a5276/ffffff?text=Our+Strength"
+               alt="チームで課題解決に取り組む様子"
+               loading="lazy">
+          <div class="strengths-image-accent" aria-hidden="true"></div>
+        </div>
+
+        <!-- 右側: 強みリスト -->
+        <div class="fade-in fade-in-delay-1">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title section-title--left">選ばれる4つの理由</h2>
+
+          <ul class="strength-list">
+
+            <li class="strength-item">
+              <span class="strength-num" aria-hidden="true">01</span>
+              <div>
+                <!-- 強みのタイトル: お客様の強みに変更 -->
+                <h3 class="strength-title">業界特化の専門知識</h3>
+                <p class="strength-text">
+                  製造業・小売業・サービス業など、各業界固有の商習慣・業務フローを熟知。
+                  一般的なITコンサルでは気づけない課題を発見し、現場に即した解決策を提案します。
+                </p>
+              </div>
+            </li>
+
+            <li class="strength-item">
+              <span class="strength-num" aria-hidden="true">02</span>
+              <div>
+                <h3 class="strength-title">導入後まで一貫サポート</h3>
+                <p class="strength-text">
+                  提案して終わりではありません。システム導入後の定着支援・従業員トレーニング・
+                  運用改善まで継続的にサポート。投資対効果を最大化します。
+                </p>
+              </div>
+            </li>
+
+            <li class="strength-item">
+              <span class="strength-num" aria-hidden="true">03</span>
+              <div>
+                <h3 class="strength-title">中小企業に最適な予算設計</h3>
+                <p class="strength-text">
+                  大手コンサルと同レベルの支援を、中小企業の予算に合わせて提供。
+                  優先度をつけた段階的な投資計画で、リスクを抑えながら確実に効果を出します。
+                </p>
+              </div>
+            </li>
+
+            <li class="strength-item">
+              <span class="strength-num" aria-hidden="true">04</span>
+              <div>
+                <h3 class="strength-title">スピード感と確実な実行力</h3>
+                <p class="strength-text">
+                  提案から実行まで一気通貫。外部ベンダーへの丸投げをせず、
+                  社内エンジニアが直接対応するため、スピーディーかつ高品質な実行が可能です。
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       お客様の声セクション
+       実際のお客様の声・実績に差し替えてください
+       （架空の声を掲載することは避けてください）
+       ============================================ -->
+  <section class="section" aria-label="お客様の声">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Client Testimonials</span>
+        <h2 class="section-title">お客様の声</h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- お客様の声1 -->
+        <article class="testimonial-card fade-in">
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <!-- 実際のお客様の声に差し替えてください -->
+          <p class="testimonial-text">
+            社内IT担当者がゼロの状態から、わずか3ヶ月でクラウド移行を完了できました。
+            専門用語を使わず、経営者目線で説明してくれるので意思決定がスムーズでした。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <!-- お客様の写真があれば差し替えてください -->
+              <img src="https://placehold.co/44x44/1a5276/ffffff?text=A" alt="" loading="lazy">
+            </div>
+            <div>
+              <!-- お客様名・会社名に差し替えてください -->
+              <p class="testimonial-name">山田 太郎 様</p>
+              <p class="testimonial-company">製造業 A社 代表取締役</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- お客様の声2 -->
+        <article class="testimonial-card fade-in fade-in-delay-1">
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <p class="testimonial-text">
+            受発注管理の業務が半自動化され、月に30時間以上の工数削減になりました。
+            現場の声を丁寧に拾ってシステムに反映してくれた点が特に良かったです。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://placehold.co/44x44/2980b9/ffffff?text=B" alt="" loading="lazy">
+            </div>
+            <div>
+              <p class="testimonial-name">鈴木 花子 様</p>
+              <p class="testimonial-company">小売業 B社 業務部長</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- お客様の声3 -->
+        <article class="testimonial-card fade-in fade-in-delay-2">
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <p class="testimonial-text">
+            ITに詳しくない私でも、毎月のレポートで投資対効果が一目でわかります。
+            「このシステムは本当に効いているの？」という不安がなくなりました。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://placehold.co/44x44/0e2f44/ffffff?text=C" alt="" loading="lazy">
+            </div>
+            <div>
+              <p class="testimonial-name">佐藤 次郎 様</p>
+              <p class="testimonial-company">サービス業 C社 社長</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       お知らせセクション（最新3件）
+       news.htmlに追加した内容と同期させてください
+       ============================================ -->
+  <section class="section section--alt" aria-label="お知らせ">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">News</span>
+        <h2 class="section-title">お知らせ</h2>
+      </div>
+
+      <!-- お知らせ一覧 -->
+      <div style="max-width: 800px; margin: 0 auto;">
+        <ul class="news-list">
+
+          <!-- お知らせアイテム: 日付・カテゴリ・タイトルを変更 -->
+          <li>
+            <a href="news.html" class="news-item">
+              <div class="news-meta">
+                <time class="news-date" datetime="2026-04-15">2026.04.15</time>
+                <span class="badge badge-accent">お知らせ</span>
+              </div>
+              <p class="news-title">2026年度 IT活用セミナー「中小企業のDX入門」を開催します</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html" class="news-item">
+              <div class="news-meta">
+                <time class="news-date" datetime="2026-04-08">2026.04.08</time>
+                <span class="badge badge-primary">実績</span>
+              </div>
+              <p class="news-title">製造業D社のERP導入プロジェクトが完了しました</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html" class="news-item">
+              <div class="news-meta">
+                <time class="news-date" datetime="2026-04-01">2026.04.01</time>
+                <span class="badge badge-accent">お知らせ</span>
+              </div>
+              <p class="news-title">2026年4月より、中小企業向けDX支援プランの料金改定を実施いたします</p>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="news-center-btn">
+          <a href="news.html" class="btn btn-secondary">お知らせ一覧を見る</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CTAセクション（お問い合わせ誘導）
+       最後に行動を促すセクション
+       ============================================ -->
+  <section class="cta-section" aria-label="お問い合わせ誘導">
+    <div class="container">
+
+      <!-- CTAタイトル: お客様に合わせて変更 -->
+      <h2 class="cta-title fade-in">まずは無料相談から始めましょう</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        「何から手をつければいいかわからない」そんな段階からでも大丈夫です。<br>
+        現在の課題をお聞きし、最適なファーストステップをご提案します。
+      </p>
+
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-primary btn-lg">無料相談を予約する</a>
+        <a href="tel:03-0000-0000" class="btn btn-white btn-lg">☎ 03-0000-0000</a>
+      </div>
+
+      <p class="cta-note">受付時間: 平日 9:00〜18:00（土日祝休）</p>
+
+      <!-- ============================================
+           Google口コミ誘導ボタン（MEO対策用）
+           お客様のplace_idに差し替えて、コメントを外して使用
+           place_idの取得方法はREADME.mdに記載
+           使わない場合はこのブロックごと削除してOK
+           ============================================ -->
+      <!--
+      <div class="review-cta" style="margin-top: 32px;">
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 12px;">サービスにご満足いただけましたか？</p>
+        <a href="https://search.google.com/local/writereview?placeid=ここにPLACE_ID"
+           class="btn btn-review" target="_blank" rel="noopener noreferrer">
+          Googleで口コミを書く
+        </a>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ============================================
+     サイトフッター（全ページ共通）
+     ============================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- ブランド情報 -->
+        <div>
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">SampleCompany</span>
+            <span class="footer-brand-sub">株式会社サンプルカンパニー</span>
+          </a>
+          <p class="footer-desc">
+            中小企業のDX推進を専門とするITコンサルティング会社。
+            業務効率化からクラウド移行まで、一貫してサポートします。
+          </p>
+          <!-- SNSリンク: URLをお客様のものに変更（不要なものは削除） -->
+          <div class="footer-sns" aria-label="SNSリンク">
+            <a href="#" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+
+        <!-- サイトマップ -->
+        <div>
+          <h3 class="footer-col-title">メニュー</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <!-- サービス一覧 -->
+        <div>
+          <h3 class="footer-col-title">サービス</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#consulting">ITコンサルティング</a></li>
+            <li><a href="service.html#cloud">クラウド移行支援</a></li>
+            <li><a href="service.html#development">業務システム開発</a></li>
+            <li><a href="service.html#support">運用・保守サポート</a></li>
+          </ul>
+        </div>
+
+        <!-- ============================================
+             NAP情報（MEO対策用）
+             ここの表記をGoogleビジネスプロフィールと完全一致させること
+             全角/半角、スペース、ハイフンの表記も一致させること
+             ============================================ -->
+        <div>
+          <h3 class="footer-col-title">会社情報</h3>
+          <address class="footer-nap" style="font-style: normal;">
+            <!-- 店舗名・会社名: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-name">株式会社サンプルカンパニー</p>
+            <!-- 住所: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <!-- 電話番号: Googleビジネスプロフィールと完全一致させること -->
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <!-- 営業時間 -->
+            <p class="nap-hours">平日 9:00〜18:00（土日祝休）</p>
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <!-- コピーライト: 会社名と年を変更してください -->
+        <p class="footer-copy">&copy; 2026 株式会社サンプルカンパニー All Rights Reserved.</p>
+        <nav class="footer-legal" aria-label="法的情報">
+          <a href="privacy.html">プライバシーポリシー</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     JavaScript読み込み
+     defer属性でHTMLの読み込みを妨げません
+     ============================================ -->
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

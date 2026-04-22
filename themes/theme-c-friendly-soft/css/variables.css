@@ -1,0 +1,109 @@
+/* ============================================
+   variables.css - デザイン変数（一元管理）
+   ★ ここを変更するだけでサイト全体のデザインが変わります
+   ============================================ */
+
+:root {
+
+  /* ============================================
+     カラー設定
+     ★ クライアントに合わせて変更してください
+     ============================================ */
+
+  /* メインカラー（ミントグリーン）: ブランドの顔となる色 */
+  --color-primary:        #3ec4b0;
+  --color-primary-dark:   #2aab98;
+  --color-primary-light:  #e0f8f5;
+  --color-primary-pale:   #f0fdfb;
+
+  /* アクセントカラー（やさしいピンク） */
+  --color-accent:         #ff8fa3;
+  --color-accent-dark:    #f07090;
+  --color-accent-light:   #ffe4ea;
+
+  /* サブカラー（イエロー） */
+  --color-yellow:         #ffd166;
+  --color-yellow-light:   #fff8e7;
+
+  /* サブカラー（ブルー） */
+  --color-blue:           #74b9ff;
+  --color-blue-light:     #e8f4ff;
+
+  /* 背景色 */
+  --color-bg:             #ffffff;
+  --color-bg-alt:         #f5fdf9;  /* 薄いミントグリーン背景 */
+  --color-bg-light:       #fef9f0;  /* 薄いクリーム背景 */
+  --color-bg-gray:        #f8f8f8;  /* グレー背景 */
+
+  /* テキスト色 */
+  --color-text:           #333333;
+  --color-text-light:     #777777;
+  --color-text-muted:     #aaaaaa;
+  --color-white:          #ffffff;
+
+  /* ボーダー色 */
+  --color-border:         #e8e8e8;
+  --color-border-light:   #f0f0f0;
+
+  /* 成功・警告・エラー */
+  --color-success:        #3ec4b0;
+  --color-warning:        #ffd166;
+  --color-error:          #ff6b6b;
+
+
+  /* ============================================
+     フォント設定
+     ★ フォントを変えたい場合はここを変更してください
+     ============================================ */
+
+  /* メインフォント（丸みのあるゴシック体） */
+  --font-primary:    'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+
+  /* 見出しフォント（同じく丸ゴシック） */
+  --font-heading:    'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+
+  /* 英数字用フォント */
+  --font-en:         'Nunito', 'M PLUS Rounded 1c', sans-serif;
+
+  /* フォントサイズ */
+  --font-size-base:  1rem;        /* 16px */
+  --font-size-sm:    0.875rem;    /* 14px */
+  --font-size-xs:    0.75rem;     /* 12px */
+  --font-size-lg:    1.125rem;    /* 18px */
+
+
+  /* ============================================
+     スペーシング・サイズ設定
+     ============================================ */
+
+  --max-width:            1180px;
+  --max-width-narrow:     800px;
+  --header-height:        72px;
+  --spacing-container:    24px;
+  --spacing-section:      96px;
+  --spacing-section-sm:   64px;
+  --border-radius:        16px;    /* カードの角丸 */
+  --border-radius-sm:     8px;     /* 小さい角丸 */
+  --border-radius-lg:     24px;    /* 大きい角丸 */
+  --border-radius-full:   9999px;  /* 完全な丸 */
+
+
+  /* ============================================
+     シャドウ設定
+     ============================================ */
+
+  --shadow-sm:   0 2px 8px rgba(62, 196, 176, 0.1);
+  --shadow-md:   0 4px 20px rgba(62, 196, 176, 0.15);
+  --shadow-lg:   0 8px 40px rgba(62, 196, 176, 0.2);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-hover:0 8px 32px rgba(0, 0, 0, 0.1);
+
+
+  /* ============================================
+     アニメーション設定
+     ============================================ */
+
+  --transition-speed: 0.25s;
+  --transition-ease:  cubic-bezier(0.4, 0, 0.2, 1);
+
+}

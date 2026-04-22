@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（このページ用）
+       ============================================ -->
+  <title>会社概要 | 株式会社サンプルカンパニー</title>
+  <meta name="description" content="株式会社サンプルカンパニーの会社概要ページ。代表挨拶、会社情報、沿革、アクセスマップをご確認いただけます。">
+  <link rel="canonical" href="https://example.com/about.html">
+
+  <!-- OGP設定 -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="会社概要 | 株式会社サンプルカンパニー">
+  <meta property="og:description" content="株式会社サンプルカンパニーの会社概要。代表挨拶、会社情報、アクセスマップをご確認いただけます。">
+  <meta property="og:url"         content="https://example.com/about.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="会社概要 | 株式会社サンプルカンパニー">
+  <meta name="twitter:description" content="株式会社サンプルカンパニーの会社概要。">
+  <meta name="twitter:image"       content="https://example.com/images/ogp.png">
+
+  <!-- GA4（コメントアウト状態） -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- Search Console（コメントアウト状態） -->
+  <!-- <meta name="google-site-verification" content="ここに認証コード"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- ============================================
+       構造化データ: BreadcrumbList（パンくずリスト用）
+       ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "会社概要",
+        "item": "https://example.com/about.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ヘッダー（全ページ共通） -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo" aria-label="株式会社サンプルカンパニー トップページへ">
+      <span class="site-logo-text">
+        SampleCompany
+        <span class="site-logo-sub">株式会社サンプルカンパニー</span>
+      </span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="about.html" aria-current="page">会社概要</a>
+      <a href="service.html">サービス</a>
+      <a href="works.html">実績</a>
+      <a href="news.html">お知らせ</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html" aria-current="page">会社概要</a>
+    <a href="service.html">サービス</a>
+    <a href="works.html">実績</a>
+    <a href="news.html">お知らせ</a>
+    <a href="contact.html" class="nav-cta">お問い合わせ</a>
+  </nav>
+</div>
+
+<div class="header-offset"></div>
+
+<!-- ============================================
+     パンくずリスト（SEO対策 + ユーザビリティ向上）
+     ============================================ -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><span aria-current="page">会社概要</span></li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ページタイトルヒーロー -->
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">会社概要</h1>
+    <p class="page-hero-desc">Company Profile</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- ============================================
+       代表挨拶セクション
+       写真: images/president.jpg に差し替えてください
+       テキスト: お客様の言葉に差し替えてください
+       ============================================ -->
+  <section class="section" aria-label="代表挨拶">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Message</span>
+        <h2 class="section-title">代表挨拶</h2>
+      </div>
+
+      <div class="about-greeting-layout">
+
+        <!-- 左: 代表者の写真 -->
+        <!-- 画像: images/president.jpg を差し替えてください（推奨サイズ: 400x500px） -->
+        <div class="about-greeting-image fade-in">
+          <img src="https://placehold.co/400x500/1a5276/ffffff?text=President+Photo"
+               alt="代表取締役 田中 一郎"
+               loading="lazy">
+        </div>
+
+        <!-- 右: 挨拶文 -->
+        <div class="about-greeting-content fade-in fade-in-delay-1">
+          <span class="section-label">Greeting</span>
+          <h2 class="section-title section-title--left">「ITで、人の仕事を<br>もっと豊かにしたい」</h2>
+
+          <div class="about-greeting-text">
+            <!-- 代表挨拶のテキスト: お客様の言葉に差し替えてください -->
+            <p>
+              当社を訪問いただき、誠にありがとうございます。代表取締役の田中 一郎です。
+            </p>
+            <p>
+              私が起業を決意したのは、前職のシステム会社に勤めていた頃のことです。
+              大企業向けのプロジェクトは次々と成功する一方で、地域の中小企業や個人事業主の方々が
+              「ITはよくわからない」「費用が高すぎる」という理由でDXの恩恵を受けられていない
+              現状に、強い問題意識を持ちました。
+            </p>
+            <p>
+              どんな規模の企業でも、適切なITを活用すれば業務は効率化され、
+              従業員はより創造的な仕事に集中できるはずです。
+              私たちはその橋渡し役として、専門用語を使わずわかりやすく、
+              予算に合わせて現実的なソリューションを提供することをモットーとしています。
+            </p>
+            <p>
+              「相談してよかった」と心から感じていただけるよう、スタッフ一同誠実に
+              取り組んでまいります。どうぞお気軽にご相談ください。
+            </p>
+          </div>
+
+          <!-- 代表者の署名 -->
+          <div class="about-greeting-sig">
+            <p class="about-greeting-sig-pos">代表取締役</p>
+            <!-- 代表者名: お客様の名前に変更 -->
+            <p class="about-greeting-sig-name">田中 一郎</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       会社概要テーブルセクション
+       各項目をお客様の情報に差し替えてください
+       ============================================ -->
+  <section class="section section--alt" aria-label="会社情報">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Company Info</span>
+        <h2 class="section-title">会社情報</h2>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <table class="info-table fade-in">
+          <tbody>
+            <!-- 各行: th（項目名）とtd（内容）を差し替えてください -->
+            <tr>
+              <th scope="row">会社名</th>
+              <td>株式会社サンプルカンパニー</td>
+            </tr>
+            <tr>
+              <th scope="row">設立</th>
+              <td>2014年4月1日</td>
+            </tr>
+            <tr>
+              <th scope="row">代表取締役</th>
+              <td>田中 一郎</td>
+            </tr>
+            <tr>
+              <th scope="row">資本金</th>
+              <td>1,000万円</td>
+            </tr>
+            <tr>
+              <th scope="row">従業員数</th>
+              <td>25名（2026年4月現在）</td>
+            </tr>
+            <tr>
+              <th scope="row">所在地</th>
+              <td>
+                〒100-0005<br>
+                東京都千代田区丸の内1-1-1 サンプルビル10F
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">電話番号</th>
+              <td><a href="tel:03-0000-0000" style="color: var(--color-primary-light);">03-0000-0000</a></td>
+            </tr>
+            <tr>
+              <th scope="row">メールアドレス</th>
+              <td><a href="mailto:info@example.com" style="color: var(--color-primary-light);">info@example.com</a></td>
+            </tr>
+            <tr>
+              <th scope="row">営業時間</th>
+              <td>平日 9:00〜18:00（土日祝休）</td>
+            </tr>
+            <tr>
+              <th scope="row">事業内容</th>
+              <td>
+                ITコンサルティング / クラウド移行支援 / 業務システム開発<br>
+                DX推進支援 / 運用・保守サポート
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">取引銀行</th>
+              <td>○○銀行 △△支店</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       沿革セクション（タイムライン形式）
+       お客様の会社の歴史に差し替えてください
+       ============================================ -->
+  <section class="section" aria-label="会社沿革">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">History</span>
+        <h2 class="section-title">沿革</h2>
+      </div>
+
+      <div style="max-width: 640px; margin: 0 auto;">
+        <div class="timeline fade-in">
+
+          <!-- 沿革アイテム: 年月と内容を変更 -->
+          <div class="timeline-item">
+            <p class="timeline-date">2014年4月</p>
+            <p class="timeline-content">東京都千代田区にて株式会社サンプルカンパニー設立</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2015年9月</p>
+            <p class="timeline-content">中小企業向けITコンサルティングサービスを開始。初年度で20社の支援を達成</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2017年4月</p>
+            <p class="timeline-content">クラウド移行支援サービスを新たに開始。AWS・Azureパートナーを取得</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2019年10月</p>
+            <p class="timeline-content">業務システム開発部門を設立。内製開発体制を強化</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2021年6月</p>
+            <p class="timeline-content">支援企業数100社を達成。従業員数20名規模へ拡大</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2023年4月</p>
+            <p class="timeline-content">経済産業省「DX認定事業者」に認定</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date">2026年4月</p>
+            <p class="timeline-content">創業12周年。支援企業数150社超、従業員数25名体制へ</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       アクセスセクション
+       Googleマップの埋め込みコードを差し替えてください
+       埋め込みコードの取得方法はREADME.mdに記載
+       ============================================ -->
+  <section class="section section--alt" aria-label="アクセス">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Access</span>
+        <h2 class="section-title">アクセス</h2>
+      </div>
+
+      <div class="access-layout">
+
+        <!-- Googleマップ埋め込み -->
+        <div class="map-container fade-in">
+          <!-- ============================================
+               Googleマップ埋め込みコード
+               1. Googleマップでお客様の所在地を検索
+               2. 「共有」→「地図を埋め込む」→「HTMLをコピー」
+               3. 下記のiframeタグを貼り替えてください
+               ============================================ -->
+          <!-- プレースホルダー表示（マップ設定前） -->
+          <div class="map-placeholder">
+            <div class="map-placeholder-icon">📍</div>
+            <p>
+              <strong>Googleマップを設定してください</strong><br>
+              README.mdの「Googleマップの設定方法」をご参照ください
+            </p>
+          </div>
+
+          <!-- 実際のGoogleマップ埋め込みコード（上記プレースホルダーを削除してから貼り替え） -->
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=ここに埋め込みコードを貼り付け"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="株式会社サンプルカンパニー アクセスマップ">
+          </iframe> -->
+        </div>
+
+        <!-- 所在地・交通手段 -->
+        <div class="fade-in fade-in-delay-1">
+          <h3 style="font-size: var(--font-size-h4); font-weight: 700; color: var(--color-text); margin-bottom: 24px;">所在地・交通案内</h3>
+
+          <address class="footer-nap" style="font-style: normal; color: var(--color-text-light);">
+            <p class="nap-name" style="color: var(--color-text);">株式会社サンプルカンパニー</p>
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <p class="nap-tel"><a href="tel:03-0000-0000">TEL: 03-0000-0000</a></p>
+            <p class="nap-hours">受付時間: 平日 9:00〜18:00（土日祝休）</p>
+          </address>
+
+          <!-- 交通手段: お客様の最寄り駅・交通手段に変更 -->
+          <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--color-border);">
+            <h4 style="font-weight: 700; color: var(--color-text); margin-bottom: 12px; font-size: 0.95rem;">交通手段</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; color: var(--color-text-light); font-size: 0.9rem;">
+              <li>🚃 JR東京駅 丸の内北口より 徒歩3分</li>
+              <li>🚃 地下鉄大手町駅 B1出口より 徒歩2分</li>
+              <li>🚌 バス停「丸の内一丁目」より 徒歩1分</li>
+              <li>🚗 近隣に有料駐車場あり（事前にご連絡ください）</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a href="contact.html" class="btn btn-primary">来社のご予約はこちら</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- フッター（全ページ共通） -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">SampleCompany</span>
+            <span class="footer-brand-sub">株式会社サンプルカンパニー</span>
+          </a>
+          <p class="footer-desc">中小企業のDX推進を専門とするITコンサルティング会社。</p>
+          <div class="footer-sns">
+            <a href="#" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">メニュー</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">サービス</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#consulting">ITコンサルティング</a></li>
+            <li><a href="service.html#cloud">クラウド移行支援</a></li>
+            <li><a href="service.html#development">業務システム開発</a></li>
+            <li><a href="service.html#support">運用・保守サポート</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">会社情報</h3>
+          <address class="footer-nap" style="font-style: normal;">
+            <p class="nap-name">株式会社サンプルカンパニー</p>
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <p class="nap-hours">平日 9:00〜18:00（土日祝休）</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 株式会社サンプルカンパニー All Rights Reserved.</p>
+        <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

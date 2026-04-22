@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内）
+       ============================================ -->
+  <title>ご予約・お問い合わせ | 創作料理 燈（あかり）</title>
+
+  <!-- ============================================
+       メタディスクリプション（120文字以内）
+       ============================================ -->
+  <meta name="description" content="創作料理 燈へのご予約・お問い合わせはこちらから。記念日・接待・ご会食など、心を込めてお迎えいたします。完全予約制。">
+
+  <!-- canonical URL: 実際のサイトURLに変更してください -->
+  <link rel="canonical" href="https://example.com/contact.html">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="ご予約・お問い合わせ | 創作料理 燈（あかり）">
+  <meta property="og:description" content="記念日・接待・ご会食など、心を込めてお迎えいたします。完全予約制。">
+  <meta property="og:url"         content="https://example.com/contact.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="創作料理 燈（あかり）">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ============================================
+       Google Analytics 4（GA4）
+       ★ G-XXXXXXXXXX を実際の測定IDに変更してください
+       ============================================ -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- スタイルシート読み込み順序（変更しないでください） -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- 構造化データ（JSON-LD）: レストラン予約ページ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://example.com/#restaurant",
+        "name": "創作料理 燈（あかり）",
+        "url": "https://example.com/",
+        "telephone": "03-0000-0000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "麻布十番1-1-1 ○○ビル2F",
+          "addressLocality": "港区",
+          "addressRegion": "東京都",
+          "postalCode": "106-0045",
+          "addressCountry": "JP"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"Reservation","item":"https://example.com/contact.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================
+       ヘッダー（全ページ共通）
+       ============================================ -->
+  <header class="site-header is-transparent" id="site-header">
+    <div class="header-inner">
+
+      <a href="index.html" class="site-logo">
+        <span class="logo-en">AKARI</span>
+        <span class="logo-ja">創作料理 燈</span>
+      </a>
+
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html" class="nav-reserve" aria-current="page">Reserve</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- フルスクリーンメニュー（スマホ用） -->
+  <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+    <div class="fullscreen-menu__inner">
+      <button class="fullscreen-menu__close" id="fullscreen-menu-close" aria-label="メニューを閉じる">
+        <span></span><span></span>
+      </button>
+      <nav aria-label="フルスクリーンメニュー">
+        <ul class="fullscreen-menu__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Reserve</a></li>
+        </ul>
+      </nav>
+      <div class="menu-footer-info" aria-hidden="true">
+        <p>創作料理 燈（あかり）</p>
+        <p>03-0000-0000</p>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-overlay" id="fullscreen-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Reservation</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-en">Reservation</span>
+      <h1 class="page-hero-title">ご予約・お問い合わせ</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         ご予約案内リード文
+         ============================================ -->
+    <div class="contact-lead fade-in">
+      <div class="contact-lead__inner">
+        <span class="contact-lead__en">Complete Reservation</span>
+        <!-- ★ リード文: お客様に合わせて変更してください -->
+        <p class="contact-lead__text">
+          燈は完全予約制のレストランです。<br>
+          ご来店の際は事前にご予約をお願いいたします。<br>
+          記念日・接待・ご会食など、特別なご要望もお気軽にお申し付けください。
+        </p>
+      </div>
+    </div>
+
+    <!-- ============================================
+         お問い合わせメインエリア
+         左: 店舗情報 / 右: フォーム
+         ============================================ -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ============================================
+               左カラム: 店舗情報・連絡先
+               ============================================ -->
+          <aside class="contact-info fade-in">
+
+            <!-- 電話予約 -->
+            <div class="contact-info__block">
+              <h2 class="contact-info__heading">
+                <span class="contact-info__heading-en">Phone</span>
+                お電話でのご予約
+              </h2>
+              <!-- ★ 電話番号: 実際の番号に変更してください -->
+              <p class="contact-info__tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+              <!-- ★ 電話受付時間 -->
+              <p class="contact-info__note">受付時間：15:00〜22:00<br>定休日：月曜日・火曜日</p>
+            </div>
+
+            <!-- 所在地 -->
+            <div class="contact-info__block">
+              <h2 class="contact-info__heading">
+                <span class="contact-info__heading-en">Access</span>
+                アクセス
+              </h2>
+              <!-- ★ 住所 -->
+              <address class="contact-info__address">
+                〒106-0045<br>東京都港区麻布十番1-1-1<br>○○ビル 2F
+              </address>
+              <!-- ★ 最寄り駅情報 -->
+              <p class="contact-info__note">
+                東京メトロ南北線・都営大江戸線<br>「麻布十番」駅より徒歩3分
+              </p>
+            </div>
+
+            <!-- 営業時間 -->
+            <div class="contact-info__block">
+              <h2 class="contact-info__heading">
+                <span class="contact-info__heading-en">Hours</span>
+                営業時間
+              </h2>
+              <!-- ★ 営業時間テーブル: 実際の時間に変更してください -->
+              <table class="contact-hours-table">
+                <tbody>
+                  <tr><th>ディナー</th><td>18:00〜23:00</td></tr>
+                  <tr><th>L.O.</th><td>21:00</td></tr>
+                  <tr><th>定休日</th><td>月曜日・火曜日</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Googleマップ -->
+            <div class="contact-info__block">
+              <h2 class="contact-info__heading">
+                <span class="contact-info__heading-en">Map</span>
+                地図
+              </h2>
+              <!-- ★ Googleマップ: 実際の埋め込みコードに差し替えてください -->
+              <!-- 取得方法: Googleマップ → 「共有」→「地図を埋め込む」→ HTMLコードをコピー -->
+              <div class="map-embed">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d139.7370!3d35.6578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7e2fc3bc05%3A0x0!2z6bKB5biC5LmL!5e0!3m2!1sja!2sjp!4v1609459200000!5m2!1sja!2sjp"
+                  width="100%"
+                  height="280"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="創作料理 燈の地図"
+                ></iframe>
+              </div>
+            </div>
+
+          </aside><!-- /.contact-info -->
+
+          <!-- ============================================
+               右カラム: お問い合わせフォーム
+               Formspree 設定方法:
+               1. https://formspree.io/ にアクセスしアカウント作成
+               2. 新しいフォームを作成してフォームIDを取得
+               3. action の "xyzabc12" を取得したフォームIDに変更
+               ============================================ -->
+          <div class="contact-form-wrap fade-in">
+
+            <!-- 送信完了メッセージ（?success=1 のときに表示） -->
+            <div class="form-success" id="form-success" hidden>
+              <div class="form-success__inner">
+                <span class="form-success__en">Thank You</span>
+                <h2 class="form-success__title">お問い合わせを受け付けました</h2>
+                <p class="form-success__text">
+                  この度はお問い合わせいただきありがとうございます。<br>
+                  内容を確認の上、2営業日以内にご連絡いたします。
+                </p>
+                <a href="index.html" class="btn btn-primary">トップページへ戻る</a>
+              </div>
+            </div>
+
+            <!-- お問い合わせフォーム本体 -->
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xyzabc12"
+              method="POST"
+              novalidate
+              id="contact-form"
+            >
+              <!-- スパム対策（見えないフィールド） -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+              <h2 class="contact-form__heading">
+                <span class="contact-form__heading-en">Reservation Form</span>
+                ご予約フォーム
+              </h2>
+              <p class="contact-form__note">
+                <span class="form-required-mark">*</span> は必須項目です。<br>
+                お電話でのご予約は <a href="tel:03-0000-0000">03-0000-0000</a> まで。
+              </p>
+
+              <!-- お名前 -->
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  お名前 <span class="form-required-mark">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="山田 太郎"
+                  autocomplete="name"
+                  maxlength="50"
+                  required
+                >
+              </div>
+
+              <!-- メールアドレス -->
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  メールアドレス <span class="form-required-mark">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="example@email.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="form-group">
+                <label class="form-label" for="tel">電話番号</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="form-control"
+                  placeholder="090-0000-0000"
+                  autocomplete="tel"
+                >
+              </div>
+
+              <!-- ご希望日時 -->
+              <div class="form-group">
+                <label class="form-label" for="date">
+                  ご希望日時 <span class="form-required-mark">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="date"
+                  name="date"
+                  class="form-control"
+                  placeholder="例：2024年12月25日（水）18:30〜"
+                  required
+                >
+              </div>
+
+              <!-- 人数 -->
+              <div class="form-group">
+                <label class="form-label" for="guests">
+                  人数 <span class="form-required-mark">*</span>
+                </label>
+                <select id="guests" name="guests" class="form-control" required>
+                  <option value="">選択してください</option>
+                  <option value="1名">1名</option>
+                  <option value="2名">2名</option>
+                  <option value="3名">3名</option>
+                  <option value="4名">4名</option>
+                  <option value="5名">5名</option>
+                  <option value="6名">6名</option>
+                  <option value="7名以上">7名以上（要相談）</option>
+                  <option value="貸し切り">貸し切り（要相談）</option>
+                </select>
+              </div>
+
+              <!-- ご利用目的 -->
+              <div class="form-group">
+                <label class="form-label" for="purpose">ご利用目的</label>
+                <select id="purpose" name="purpose" class="form-control">
+                  <option value="">選択してください</option>
+                  <option value="記念日・誕生日">記念日・誕生日</option>
+                  <option value="接待">接待</option>
+                  <option value="ご会食">ご会食</option>
+                  <option value="デート">デート</option>
+                  <option value="家族の食事">家族の食事</option>
+                  <option value="友人との食事">友人との食事</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+
+              <!-- ご要望・アレルギー -->
+              <div class="form-group">
+                <label class="form-label" for="message">
+                  ご要望・アレルギー等 <span class="form-required-mark">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="6"
+                  placeholder="アレルギー・食材の好み・ご要望などがございましたら、お気軽にご記入ください。"
+                  minlength="10"
+                  maxlength="1000"
+                  required
+                ></textarea>
+                <span class="form-char-count" id="message-count">0 / 1000文字</span>
+              </div>
+
+              <!-- プライバシーポリシー同意 -->
+              <div class="form-group form-group--checkbox">
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="privacy" id="privacy" required>
+                  <span>
+                    <a href="privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+                    に同意する <span class="form-required-mark">*</span>
+                  </span>
+                </label>
+              </div>
+
+              <!-- 送信ボタン -->
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-full">予約リクエストを送信する</button>
+              </div>
+
+            </form><!-- /.contact-form -->
+
+          </div><!-- /.contact-form-wrap -->
+
+        </div><!-- /.contact-layout -->
+      </div>
+    </section><!-- /.contact-section -->
+
+  </main><!-- /#main-content -->
+
+
+  <!-- フッター（全ページ共通） -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo-ja">創作料理 燈</span>
+            <span class="footer-logo-en">Akari — Azabu-juban</span>
+            <p class="footer-desc">旬の食材と職人の技が織りなす、麻布十番の創作和食レストラン。</p>
+            <div class="footer-sns">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Menu</h3>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">燈について</a></li>
+              <li><a href="service.html">お料理・コース</a></li>
+              <li><a href="works.html">ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Course</h3>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#omakase">おまかせコース</a></li>
+              <li><a href="service.html#seasonal">季節のコース</a></li>
+              <li><a href="service.html#private">個室・貸し切り</a></li>
+              <li><a href="service.html#pairing">ペアリング</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Access</h3>
+            <address class="footer-nap" style="font-style:normal;">
+              <p class="nap-name">創作料理 燈（あかり）</p>
+              <p class="nap-address">〒106-0045<br>東京都港区麻布十番1-1-1<br>○○ビル 2F</p>
+              <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+              <p class="nap-hours">火〜日 18:00〜（月・火定休）<br>完全予約制</p>
+              <p style="margin-top:16px;">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 創作料理 燈（あかり） All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+  <script src="js/form-validation.js" defer></script>
+
+  <!-- フォーム送信完了チェック・文字数カウント -->
+  <script>
+  (function () {
+    if (new URLSearchParams(window.location.search).get('success') === '1') {
+      var form = document.getElementById('contact-form');
+      var msg  = document.getElementById('form-success');
+      if (form) form.hidden = true;
+      if (msg)  msg.hidden  = false;
+    }
+    var textarea = document.getElementById('message');
+    var counter  = document.getElementById('message-count');
+    if (textarea && counter) {
+      textarea.addEventListener('input', function () {
+        counter.textContent = textarea.value.length + ' / 1000文字';
+      });
+    }
+  })();
+  </script>
+
+</body>
+</html>

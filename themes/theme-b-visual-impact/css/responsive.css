@@ -1,0 +1,429 @@
+/* ============================================
+   responsive.css - Bテーマ スマホ・タブレット対応
+   ブレークポイント:
+     スマホ: 〜767px
+     タブレット: 768px〜1199px
+     PC: 1200px〜
+   ============================================ */
+
+
+/* ============================================
+   タブレット対応 (768px〜1199px)
+   ============================================ */
+@media (max-width: 1199px) {
+
+  /* ヒーロー情報バー */
+  .hero-info-bar-inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .hero-info-item:first-child {
+    border-left: none;
+  }
+
+  /* コンセプトレイアウト */
+  .concept-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .concept-image-col {
+    height: 400px;
+  }
+
+  .concept-image-col::after {
+    display: none;
+  }
+
+  .concept-content-col {
+    padding: 60px 40px;
+  }
+
+  /* おすすめ料理 */
+  .featured-menu-grid .menu-card--large {
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card--large .menu-card-image {
+    min-height: 300px;
+  }
+
+  .featured-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-menu-grid .menu-card--large {
+    grid-column: span 2;
+  }
+
+  /* こだわりセクション */
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-item {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-dark);
+    padding: 36px 0;
+  }
+
+  .story-item:last-child {
+    border-bottom: none;
+  }
+
+  /* メディアストリップ */
+  .media-strip {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 240px 240px;
+  }
+
+  .media-strip-item.span-row {
+    grid-row: span 1;
+  }
+
+  /* 口コミ */
+  .voice-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* フッター */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  /* About */
+  .about-hero-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-hero-image {
+    height: 400px;
+  }
+
+  .about-hero-content {
+    padding: 48px 40px;
+  }
+
+  /* ギャラリーグリッド（タブレット） */
+  .gallery-card--wide {
+    grid-column: span 2;
+    aspect-ratio: 16 / 7;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info-card {
+    position: static;
+  }
+}
+
+
+/* ============================================
+   スマホ対応 (767px以下)
+   ============================================ */
+@media (max-width: 767px) {
+
+  :root {
+    --spacing-section: 64px;
+    --font-size-h1: 2.2rem;
+    --font-size-h2: 1.7rem;
+    --font-size-h3: 1.3rem;
+  }
+
+  /* フルスクリーンメニュー */
+  .fullscreen-nav a {
+    padding: 12px 20px;
+    font-size: 1.3rem;
+  }
+
+  /* ヒーロー */
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-info-bar {
+    display: none;
+  }
+
+  .hero-scroll-hint {
+    display: none;
+  }
+
+  /* コンセプト */
+  .concept-image-col {
+    height: 260px;
+  }
+
+  .concept-content-col {
+    padding: 40px 24px;
+  }
+
+  /* おすすめ料理 */
+  .featured-menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-menu-grid .menu-card--large {
+    grid-column: span 1;
+  }
+
+  .menu-card--large .menu-card-body {
+    padding: 28px 24px;
+  }
+
+  /* ギャラリーグリッド */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid--masonry {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+  }
+
+  .gallery-item.span-2 {
+    grid-row: span 1;
+  }
+
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+
+  /* メディアストリップ */
+  .media-strip {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 220px);
+  }
+
+  .media-strip-item.span-row {
+    grid-row: span 1;
+  }
+
+  /* 口コミ */
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* お知らせ */
+  .news-item {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* コース料金 */
+  .course-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 16px;
+  }
+
+  .course-price {
+    text-align: left;
+  }
+
+  /* コースタブ */
+  .course-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .course-tab-btn {
+    white-space: nowrap;
+    padding: 12px 20px;
+  }
+
+  /* About */
+  .chef-profile {
+    flex-direction: column;
+  }
+
+  /* フッター */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-top {
+    padding: 48px 0 36px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* CTA */
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* パンくず */
+  .breadcrumb-list {
+    font-size: 0.8rem;
+  }
+
+  /* ページヒーロー */
+  .page-hero {
+    padding: 52px 0;
+  }
+
+  /* Contact */
+  .contact-form-section {
+    padding: 28px 20px;
+  }
+
+  .contact-form-wrap {
+    padding: 28px 20px;
+  }
+
+  /* ギャラリーグリッド（スマホ） */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-card--large {
+    grid-column: span 2;
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-card--wide {
+    grid-column: span 2;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* フィルタータブ */
+  .filter-tabs {
+    gap: 6px;
+  }
+
+  .filter-tab-btn {
+    padding: 8px 18px;
+    font-size: 0.72rem;
+  }
+
+  /* ニュースアーカイブ */
+  .news-item__meta {
+    flex-wrap: wrap;
+  }
+
+  /* プライバシー */
+  .privacy-contact dl {
+    grid-template-columns: 70px 1fr;
+  }
+
+  /* テーブル */
+  .info-table th,
+  .info-table td {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .info-table th {
+    padding-bottom: 4px;
+    border-bottom: none;
+  }
+
+  /* セクションタイトル */
+  .section-header {
+    margin-bottom: 44px;
+  }
+}
+
+
+/* ============================================
+   小型スマホ (374px以下)
+   ============================================ */
+@media (max-width: 374px) {
+
+  /* ギャラリー: 1カラム */
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery-card--large,
+  .gallery-card--wide {
+    grid-column: span 1 !important;
+    aspect-ratio: 4 / 3;
+  }
+
+
+
+  :root {
+    --spacing-container: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .fullscreen-nav a {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* ============================================
+   印刷用
+   ============================================ */
+@media print {
+
+  .site-header,
+  .hamburger-btn,
+  .fullscreen-menu,
+  .cta-section,
+  .hero-scroll-hint {
+    display: none !important;
+  }
+
+  .hero {
+    min-height: auto;
+    background: none;
+    color: #000;
+  }
+
+  .hero-bg,
+  .hero-overlay {
+    display: none;
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  .hero-title,
+  .hero-desc {
+    color: #000;
+  }
+
+  .site-footer {
+    background: #fff;
+    color: #000;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+}

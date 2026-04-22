@@ -1,0 +1,345 @@
+/* ============================================
+   responsive.css - Cテーマ スマホ・タブレット対応
+   ブレークポイント:
+     スマホ: 〜767px
+     タブレット: 768px〜1199px
+     PC: 1200px〜
+   ============================================ */
+
+
+/* ============================================
+   タブレット対応 (768px〜1199px)
+   ============================================ */
+@media (max-width: 1199px) {
+
+  /* ヒーロー */
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* 強みグリッド: 2カラム */
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 診療内容グリッド: 2カラム */
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ギャラリーグリッド: 2カラム */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 口コミグリッド: 2カラム */
+  .voice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* フッターグリッド: 2カラム */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  /* 診療詳細 */
+  .service-detail {
+    gap: 40px;
+  }
+
+  /* 院長プロフィール */
+  .doctor-profile {
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+  }
+
+  /* アクセス */
+  .access-info {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-info {
+    position: static;
+  }
+
+}
+
+
+/* ============================================
+   スマホ対応 (〜767px)
+   ============================================ */
+@media (max-width: 767px) {
+
+  /* コンテナ */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* セクション余白 */
+  .section {
+    padding: 64px 0;
+  }
+
+  /* ヘッダー: PC用ナビを非表示 */
+  .site-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* ヒーロー: 1カラム */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 16px 48px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image__main {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-badge--1 {
+    bottom: -12px;
+    left: -8px;
+  }
+
+  .hero-badge--2 {
+    top: -8px;
+    right: -8px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* お知らせバー */
+  .news-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+
+  .news-bar__label {
+    margin-right: 0;
+    border-radius: var(--border-radius-full);
+  }
+
+  .news-bar__more {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* 強みグリッド: 1カラム */
+  .strengths-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* 診療内容グリッド: 1カラム */
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* フロー: 縦並び */
+  .flow-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .flow-item + .flow-item {
+    margin-left: 0;
+  }
+
+  .flow-item + .flow-item::before {
+    content: '▼';
+    left: 50%;
+    top: -16px;
+    transform: translateX(-50%);
+  }
+
+  /* 口コミグリッド: 1カラム */
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ギャラリーグリッド: 2カラム */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  /* ページヒーロー */
+  .page-hero {
+    padding: 40px 0 32px;
+  }
+
+  /* About: 院長プロフィール */
+  .doctor-profile {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .doctor-photo {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  /* Service: 診療詳細 */
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .service-detail:nth-child(even) {
+    direction: ltr;
+  }
+
+  /* アクセス情報 */
+  .access-map iframe {
+    height: 260px;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    position: static;
+  }
+
+  .contact-form-wrap {
+    padding: 24px 20px;
+  }
+
+  /* フッター */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-top {
+    padding: 48px 0 32px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  /* CTA */
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* アコーディオン */
+  .accordion-btn {
+    padding: 16px 18px;
+  }
+
+  .accordion-body {
+    padding: 0 18px 16px 52px;
+  }
+
+  /* テーブル */
+  .clinic-table th {
+    width: auto;
+    min-width: 90px;
+  }
+
+  /* 診療時間テーブル */
+  .hours-table {
+    font-size: var(--font-size-xs);
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: 8px 6px;
+  }
+
+  /* プライバシーポリシー */
+  .privacy-contact dl {
+    grid-template-columns: 70px 1fr;
+  }
+
+}
+
+
+/* ============================================
+   小型スマホ (374px以下)
+   ============================================ */
+@media (max-width: 374px) {
+
+  :root {
+    --spacing-container: 12px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ============================================
+   印刷用
+   ============================================ */
+@media print {
+
+  .site-header,
+  .hamburger,
+  .slide-menu,
+  .cta-section,
+  .hero-scroll {
+    display: none !important;
+  }
+
+  body {
+    font-size: 11pt;
+    color: #000;
+  }
+
+  .site-footer {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       ページタイトル（60文字以内）
+       ============================================ -->
+  <title>ギャラリー | 創作料理 燈（あかり）</title>
+
+  <!-- ============================================
+       メタディスクリプション（120文字以内）
+       ============================================ -->
+  <meta name="description" content="創作料理 燈のギャラリーページ。旬の食材を活かしたコース料理、落ち着いた和モダンの店内、シェフの仕事風景をご覧ください。">
+
+  <!-- canonical URL: 実際のサイトURLに変更してください -->
+  <link rel="canonical" href="https://example.com/works.html">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="ギャラリー | 創作料理 燈（あかり）">
+  <meta property="og:description" content="旬の食材を活かしたコース料理、落ち着いた和モダンの店内、シェフの仕事風景をご覧ください。">
+  <meta property="og:url"         content="https://example.com/works.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="創作料理 燈（あかり）">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ============================================
+       Google Analytics 4（GA4）
+       ★ G-XXXXXXXXXX を実際の測定IDに変更してください
+       ============================================ -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- スタイルシート読み込み順序（変更しないでください） -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- 構造化データ（JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://example.com/#restaurant",
+        "name": "創作料理 燈（あかり）",
+        "url": "https://example.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"Gallery","item":"https://example.com/works.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================
+       ヘッダー（全ページ共通）
+       ============================================ -->
+  <header class="site-header is-transparent" id="site-header">
+    <div class="header-inner">
+
+      <!-- ロゴ・店名 -->
+      <a href="index.html" class="site-logo">
+        <span class="logo-en">AKARI</span>
+        <span class="logo-ja">創作料理 燈</span>
+      </a>
+
+      <!-- PC用ナビゲーション -->
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html" aria-current="page">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html" class="nav-reserve">Reserve</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーボタン（スマホ用） -->
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- フルスクリーンメニュー（スマホ用） -->
+  <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+    <div class="fullscreen-menu__inner">
+      <button class="fullscreen-menu__close" id="fullscreen-menu-close" aria-label="メニューを閉じる">
+        <span></span><span></span>
+      </button>
+      <nav aria-label="フルスクリーンメニュー">
+        <ul class="fullscreen-menu__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Menu</a></li>
+          <li><a href="works.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Reserve</a></li>
+        </ul>
+      </nav>
+      <div class="menu-footer-info" aria-hidden="true">
+        <p>創作料理 燈（あかり）</p>
+        <p>03-0000-0000</p>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-overlay" id="fullscreen-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Gallery</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-en">Gallery</span>
+      <h1 class="page-hero-title">ギャラリー</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         カテゴリフィルター
+         data-filter の値はギャラリーカードの data-category と一致させてください
+         ============================================ -->
+    <section class="gallery-filter-section">
+      <div class="container">
+        <div class="filter-tabs" role="tablist" aria-label="ギャラリーカテゴリー">
+
+          <!-- ★ カテゴリボタン -->
+          <button class="filter-tab-btn is-active" data-filter="all"      role="tab" aria-selected="true">All</button>
+          <button class="filter-tab-btn"            data-filter="cuisine"  role="tab" aria-selected="false">Cuisine</button>
+          <button class="filter-tab-btn"            data-filter="interior" role="tab" aria-selected="false">Interior</button>
+          <button class="filter-tab-btn"            data-filter="chef"     role="tab" aria-selected="false">Chef</button>
+          <button class="filter-tab-btn"            data-filter="event"    role="tab" aria-selected="false">Event</button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ギャラリーグリッド
+         写真URL・alt テキストを実際の写真に変更してください
+         data-category の値をフィルターボタンの data-filter と一致させてください
+         ============================================ -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- ★ 横長大カード: 目玉写真 -->
+          <article class="gallery-card gallery-card--large fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <!-- ★ 料理写真: 横長の目玉写真 -->
+              <img
+                src="https://placehold.co/1200x800/1a1a1a/c9a227?text=Featured+Dish"
+                alt="燈の看板料理・旬の食材を使ったコース前菜"
+                loading="lazy"
+                width="1200"
+                height="800"
+              >
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <!-- ★ 写真タイトル: 実際の料理名に変更 -->
+                <p class="gallery-card__caption">季節の前菜 〜春の訪れ〜</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 料理 -->
+          <article class="gallery-card fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Soup" alt="旬の野菜を使った創作スープ" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <p class="gallery-card__caption">旬野菜の冷製スープ</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 店内 -->
+          <article class="gallery-card fade-in" data-category="interior">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Interior" alt="落ち着いた和モダンの店内席" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Interior</span>
+                <p class="gallery-card__caption">カウンター席 〜職人の技を間近で〜</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 料理 -->
+          <article class="gallery-card fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Main+Dish" alt="旬の魚介を使ったメイン料理" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <p class="gallery-card__caption">鮮魚のポワレ 山菜添え</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: シェフ -->
+          <article class="gallery-card fade-in" data-category="chef">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Chef" alt="真剣に料理を仕上げるシェフの手元" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Chef</span>
+                <p class="gallery-card__caption">仕上げの一瞬</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 横長大カード: 個室 -->
+          <article class="gallery-card gallery-card--large fade-in" data-category="interior">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/1200x800/1a1a1a/c9a227?text=Private+Room" alt="燈の個室・和モダンな個室席" loading="lazy" width="1200" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Interior</span>
+                <p class="gallery-card__caption">個室 〜大切な時間を静かに〜</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 料理 -->
+          <article class="gallery-card fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Dessert" alt="季節のデザートプレート" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <p class="gallery-card__caption">季節のデザート</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: イベント -->
+          <article class="gallery-card fade-in" data-category="event">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Special+Event" alt="記念日の特別ディナーセッティング" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Event</span>
+                <p class="gallery-card__caption">アニバーサリーディナー</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: シェフ -->
+          <article class="gallery-card fade-in" data-category="chef">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Chef+Portrait" alt="シェフのポートレート" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Chef</span>
+                <p class="gallery-card__caption">Chef Makoto Nakamura</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 料理 -->
+          <article class="gallery-card fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Wagyu" alt="黒毛和牛の炭火焼き" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <p class="gallery-card__caption">黒毛和牛の炭火焼き</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 店内 -->
+          <article class="gallery-card fade-in" data-category="interior">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Bar" alt="落ち着いた雰囲気のバーカウンター" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Interior</span>
+                <p class="gallery-card__caption">バーカウンター</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 全幅ワイドカード: キッチン -->
+          <article class="gallery-card gallery-card--wide fade-in" data-category="chef">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/1800x700/1a1a1a/c9a227?text=Open+Kitchen" alt="燈のオープンキッチン" loading="lazy" width="1800" height="700">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Chef</span>
+                <p class="gallery-card__caption">オープンキッチン</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: イベント -->
+          <article class="gallery-card fade-in" data-category="event">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Private+Party" alt="貸し切りパーティーのテーブルセッティング" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Event</span>
+                <p class="gallery-card__caption">貸し切りパーティー</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 料理 -->
+          <article class="gallery-card fade-in" data-category="cuisine">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Rice+Course" alt="締めの土鍋ご飯" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Cuisine</span>
+                <p class="gallery-card__caption">土鍋炊きご飯</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ★ 通常カード: 店内 -->
+          <article class="gallery-card fade-in" data-category="interior">
+            <div class="gallery-card__img-wrap">
+              <img src="https://placehold.co/800x800/1a1a1a/c9a227?text=Entrance" alt="和の趣あふれるエントランス" loading="lazy" width="800" height="800">
+              <div class="gallery-card__overlay">
+                <span class="gallery-card__label">Interior</span>
+                <p class="gallery-card__caption">エントランス</p>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.gallery-grid -->
+      </div>
+    </section><!-- /.gallery-section -->
+
+
+    <!-- ============================================
+         CTAセクション
+         ============================================ -->
+    <section class="cta-section" aria-label="ご予約">
+      <div class="container">
+        <span class="cta-en fade-in">Reservation</span>
+        <h2 class="cta-title fade-in fade-in-delay-1">
+          特別な夜を、<br>
+          燈でお過ごしください。
+        </h2>
+        <p class="cta-desc fade-in fade-in-delay-2">
+          ご予約・お問い合わせはこちらから。<br>
+          記念日・接待・ご会食など、心を込めてお迎えいたします。
+        </p>
+        <div class="cta-actions fade-in fade-in-delay-3">
+          <a href="contact.html" class="btn btn-primary btn-lg">ご予約はこちら</a>
+          <a href="service.html" class="btn btn-outline-white btn-lg">コースを見る</a>
+        </div>
+        <p class="cta-note">完全予約制 — 火〜日 17:30〜（月曜定休）</p>
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ============================================
+       フッター（全ページ共通）
+       ★ NAP情報（店名・住所・電話番号）は
+         Googleビジネスプロフィールと完全一致させてください
+       ============================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo-ja">創作料理 燈</span>
+            <span class="footer-logo-en">Akari — Azabu-juban</span>
+            <p class="footer-desc">旬の食材と職人の技が織りなす、麻布十番の創作和食レストラン。</p>
+            <div class="footer-sns">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Menu</h3>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">燈について</a></li>
+              <li><a href="service.html">お料理・コース</a></li>
+              <li><a href="works.html">ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Course</h3>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#omakase">おまかせコース</a></li>
+              <li><a href="service.html#seasonal">季節のコース</a></li>
+              <li><a href="service.html#private">個室・貸し切り</a></li>
+              <li><a href="service.html#pairing">ペアリング</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-col-title">Access</h3>
+            <!-- ★ NAP: Googleビジネスプロフィールと完全一致 -->
+            <address class="footer-nap" style="font-style:normal;">
+              <p class="nap-name">創作料理 燈（あかり）</p>
+              <p class="nap-address">〒106-0045<br>東京都港区麻布十番1-1-1<br>○○ビル 2F</p>
+              <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+              <p class="nap-hours">火〜日 18:00〜（月・火定休）<br>完全予約制</p>
+              <!-- ★ Googleレビューボタン: place_idを変更してください -->
+              <p style="margin-top:16px;">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 創作料理 燈（あかり） All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+
+  <!-- ギャラリーフィルター -->
+  <script>
+  (function () {
+    var btns  = document.querySelectorAll('.filter-tab-btn');
+    var cards = document.querySelectorAll('.gallery-card');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.dataset.filter;
+        btns.forEach(function (b) { b.classList.remove('is-active'); b.setAttribute('aria-selected','false'); });
+        btn.classList.add('is-active'); btn.setAttribute('aria-selected','true');
+        cards.forEach(function (card) {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

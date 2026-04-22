@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サービス紹介 | 株式会社サンプルカンパニー</title>
+  <meta name="description" content="株式会社サンプルカンパニーのサービス一覧。ITコンサルティング・クラウド移行支援・業務システム開発・運用保守サポートの詳細と料金プランをご確認いただけます。">
+  <link rel="canonical" href="https://example.com/service.html">
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="サービス紹介 | 株式会社サンプルカンパニー">
+  <meta property="og:description" content="ITコンサルティング・クラウド移行支援・業務システム開発の詳細と料金プランをご確認いただけます。">
+  <meta property="og:url"         content="https://example.com/service.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="サービス紹介 | 株式会社サンプルカンパニー">
+  <meta name="twitter:description" content="ITコンサルティング・クラウド移行支援・業務システム開発の詳細と料金プランをご確認いただけます。">
+  <meta name="twitter:image"       content="https://example.com/images/ogp.png">
+
+  <!-- GA4（コメントアウト状態） -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- BreadcrumbList構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+      {"@type":"ListItem","position":2,"name":"サービス紹介","item":"https://example.com/service.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ヘッダー（全ページ共通） -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo" aria-label="株式会社サンプルカンパニー トップページへ">
+      <span class="site-logo-text">SampleCompany<span class="site-logo-sub">株式会社サンプルカンパニー</span></span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">会社概要</a>
+      <a href="service.html" aria-current="page">サービス</a>
+      <a href="works.html">実績</a>
+      <a href="news.html">お知らせ</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">会社概要</a>
+    <a href="service.html" aria-current="page">サービス</a>
+    <a href="works.html">実績</a>
+    <a href="news.html">お知らせ</a>
+    <a href="contact.html" class="nav-cta">お問い合わせ</a>
+  </nav>
+</div>
+<div class="header-offset"></div>
+
+<!-- パンくずリスト -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><span aria-current="page">サービス紹介</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">サービス紹介</h1>
+    <p class="page-hero-desc">Our Services</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- ============================================
+       サービス詳細セクション
+       奇数番目: 画像左・テキスト右
+       偶数番目: 画像右・テキスト左（CSSで自動切り替え）
+       ============================================ -->
+  <section class="section" id="consulting" aria-label="サービス一覧">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">提供サービス</h2>
+        <p class="section-desc">貴社の課題に合わせた最適なサービスをご提案します</p>
+      </div>
+
+      <div class="service-detail-list">
+
+        <!-- サービス1: ITコンサルティング -->
+        <article class="service-detail-item fade-in" id="consulting">
+          <div class="service-detail-image">
+            <!-- 画像: images/service-consulting.jpg を差し替えてください -->
+            <img src="https://placehold.co/600x450/1a5276/ffffff?text=Consulting"
+                 alt="ITコンサルティングのミーティング風景"
+                 loading="lazy">
+          </div>
+          <div class="service-detail-content">
+            <span class="section-label">01</span>
+            <h3 class="service-detail-title">ITコンサルティング</h3>
+            <p class="service-detail-text">
+              社内のIT戦略立案から具体的な施策実行まで、外部CIOとして貴社に伴走します。
+              「どこから手をつければいいかわからない」という段階からでもご相談ください。
+              現状分析・課題抽出・解決策立案・実行支援・効果測定まで一気通貫でサポートします。
+            </p>
+            <ul class="service-detail-features">
+              <li class="service-detail-feature">IT現状診断・課題抽出（無料相談あり）</li>
+              <li class="service-detail-feature">IT中期戦略・ロードマップ策定</li>
+              <li class="service-detail-feature">ベンダー選定・交渉サポート</li>
+              <li class="service-detail-feature">月次進捗管理・定例報告</li>
+              <li class="service-detail-feature">投資対効果（ROI）測定・報告</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- サービス2: クラウド移行支援 -->
+        <article class="service-detail-item fade-in" id="cloud">
+          <div class="service-detail-image">
+            <img src="https://placehold.co/600x450/2980b9/ffffff?text=Cloud+Migration"
+                 alt="クラウド移行の設計図"
+                 loading="lazy">
+          </div>
+          <div class="service-detail-content">
+            <span class="section-label">02</span>
+            <h3 class="service-detail-title">クラウド移行支援</h3>
+            <p class="service-detail-text">
+              オンプレミスのサーバーやシステムをAWS・Azure・Google Cloudへ移行します。
+              セキュリティとコストを最適化しながら、業務停止リスクを最小化した計画を策定。
+              移行後のコスト最適化・セキュリティ強化まで継続してサポートします。
+            </p>
+            <ul class="service-detail-features">
+              <li class="service-detail-feature">現状インフラ診断・移行計画策定</li>
+              <li class="service-detail-feature">AWS / Azure / Google Cloud対応</li>
+              <li class="service-detail-feature">段階的移行による停止リスク最小化</li>
+              <li class="service-detail-feature">セキュリティ設計・コンプライアンス対応</li>
+              <li class="service-detail-feature">移行後のコスト最適化・監視体制構築</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- サービス3: 業務システム開発 -->
+        <article class="service-detail-item fade-in" id="development">
+          <div class="service-detail-image">
+            <img src="https://placehold.co/600x450/0e2f44/ffffff?text=System+Development"
+                 alt="業務システムの画面設計"
+                 loading="lazy">
+          </div>
+          <div class="service-detail-content">
+            <span class="section-label">03</span>
+            <h3 class="service-detail-title">業務システム開発</h3>
+            <p class="service-detail-text">
+              既製品では対応できない独自業務に対応するシステムをゼロから開発します。
+              現場ヒアリングを重視し、実際に使われるシステムを構築。
+              開発後の機能追加・改善にも柔軟に対応します。
+            </p>
+            <ul class="service-detail-features">
+              <li class="service-detail-feature">要件定義・UI/UX設計から一貫対応</li>
+              <li class="service-detail-feature">受発注管理・在庫管理・顧客管理 等</li>
+              <li class="service-detail-feature">既存システムとのAPI連携</li>
+              <li class="service-detail-feature">スマホ対応・クラウド設計</li>
+              <li class="service-detail-feature">導入後の保守・機能追加サポート</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- サービス4: 運用・保守サポート -->
+        <article class="service-detail-item fade-in" id="support">
+          <div class="service-detail-image">
+            <img src="https://placehold.co/600x450/e67e22/ffffff?text=Support"
+                 alt="サポートチームによるヘルプデスク"
+                 loading="lazy">
+          </div>
+          <div class="service-detail-content">
+            <span class="section-label">04</span>
+            <h3 class="service-detail-title">運用・保守サポート</h3>
+            <p class="service-detail-text">
+              システム導入後の運用サポートを月額定額で提供します。
+              障害対応・定期メンテナンス・セキュリティアップデートまで、
+              専任担当者がワンストップで対応。IT担当者がいない企業でも安心です。
+            </p>
+            <ul class="service-detail-features">
+              <li class="service-detail-feature">障害発生時の迅速な対応（営業時間内）</li>
+              <li class="service-detail-feature">定期メンテナンス・セキュリティ更新</li>
+              <li class="service-detail-feature">月次システム稼働レポート提供</li>
+              <li class="service-detail-feature">小規模な機能改善を月1〜2件含む</li>
+              <li class="service-detail-feature">電話・メール・チャットでのサポート</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       料金表セクション
+       金額・プラン内容をお客様のものに差し替えてください
+       ============================================ -->
+  <section class="section section--alt" aria-label="料金プラン">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">料金プラン</h2>
+        <p class="section-desc">すべてのプランで初回無料相談（1時間）をご利用いただけます</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- ライトプラン -->
+        <div class="pricing-card fade-in">
+          <p class="pricing-plan">Lite</p>
+          <p class="pricing-price"><sup>¥</sup>50,000</p>
+          <p class="pricing-price-note">/ 月（税別）</p>
+          <ul class="pricing-features">
+            <li class="pricing-feature">月2回のオンライン定例（各1時間）</li>
+            <li class="pricing-feature">メール相談（返答48時間以内）</li>
+            <li class="pricing-feature">月次IT状況レポート</li>
+            <li class="pricing-feature">セキュリティ脆弱性チェック</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">相談する</a>
+        </div>
+
+        <!-- スタンダードプラン（おすすめ） -->
+        <div class="pricing-card pricing-card--featured fade-in fade-in-delay-1">
+          <span class="pricing-featured-label">おすすめ</span>
+          <p class="pricing-plan">Standard</p>
+          <p class="pricing-price"><sup>¥</sup>100,000</p>
+          <p class="pricing-price-note">/ 月（税別）</p>
+          <ul class="pricing-features">
+            <li class="pricing-feature">月4回の訪問 or オンライン定例</li>
+            <li class="pricing-feature">電話・メール相談（即日対応）</li>
+            <li class="pricing-feature">月次IT状況レポート＋改善提案</li>
+            <li class="pricing-feature">システム運用保守（月10時間分）</li>
+            <li class="pricing-feature">セキュリティ監視・定期更新</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">相談する</a>
+        </div>
+
+        <!-- エンタープライズプラン -->
+        <div class="pricing-card fade-in fade-in-delay-2">
+          <p class="pricing-plan">Enterprise</p>
+          <p class="pricing-price" style="font-size: 1.5rem;">お見積り</p>
+          <p class="pricing-price-note">用途に合わせてご相談</p>
+          <ul class="pricing-features">
+            <li class="pricing-feature">専任担当者のアサイン</li>
+            <li class="pricing-feature">常駐 or 週次訪問対応</li>
+            <li class="pricing-feature">システム開発・改修（工数制）</li>
+            <li class="pricing-feature">24時間緊急対応オプション</li>
+            <li class="pricing-feature">役員向けIT戦略報告</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">お見積り依頼</a>
+        </div>
+
+      </div>
+
+      <p class="text-center text-light mt-md" style="font-size: var(--font-size-sm);">
+        ※ 表示価格はすべて税別です。初月は日割り計算となります。<br>
+        ※ 最低契約期間は3ヶ月です（3ヶ月後は1ヶ月単位で解約可能）。
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       サービスの流れセクション（ステップ形式）
+       ============================================ -->
+  <section class="section" aria-label="サービスの流れ">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Process</span>
+        <h2 class="section-title">サービスの流れ</h2>
+        <p class="section-desc">ご相談から導入まで、丁寧にご案内します</p>
+      </div>
+
+      <div class="steps-list">
+
+        <div class="step-item fade-in">
+          <div class="step-num" aria-hidden="true">01</div>
+          <h3 class="step-title">無料相談</h3>
+          <p class="step-text">
+            まずはお気軽にご連絡ください。現在の課題やご要望をお伺いします（オンライン対応可）
+          </p>
+        </div>
+
+        <div class="step-item fade-in fade-in-delay-1">
+          <div class="step-num" aria-hidden="true">02</div>
+          <h3 class="step-title">現状診断・提案</h3>
+          <p class="step-text">
+            現状の課題を分析し、最適なサービスプランと費用を提案します（1〜2週間）
+          </p>
+        </div>
+
+        <div class="step-item fade-in fade-in-delay-2">
+          <div class="step-num" aria-hidden="true">03</div>
+          <h3 class="step-title">契約・キックオフ</h3>
+          <p class="step-text">
+            契約締結後、プロジェクトチームを組成してキックオフミーティングを実施
+          </p>
+        </div>
+
+        <div class="step-item fade-in fade-in-delay-3">
+          <div class="step-num" aria-hidden="true">04</div>
+          <h3 class="step-title">実行・フォロー</h3>
+          <p class="step-text">
+            計画に沿って施策を実行。月次レポートで進捗と効果を共有し、継続改善します
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FAQセクション（アコーディオン）
+       よく聞かれる質問とその回答を追加してください
+       ============================================ -->
+  <section class="section section--alt" aria-label="よくある質問">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">よくある質問</h2>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="accordion fade-in">
+
+          <!-- FAQ1 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>社内にIT担当者がいなくても相談できますか？</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              はい、もちろんです。IT担当者がいない、またはITに詳しくないという状況から
+              ご相談を始める企業様が大半です。専門用語を使わず、わかりやすい言葉で
+              現状と解決策をご説明しますのでご安心ください。
+            </div>
+          </div>
+
+          <!-- FAQ2 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>費用はどのくらいかかりますか？</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              月額5万円〜の定額サポートプランから、スポットでのコンサルティング（日額10万円〜）まで
+              幅広くご用意しています。まずは無料相談でお客様の課題と予算をお聞きした上で、
+              最適なプランをご提案します。
+            </div>
+          </div>
+
+          <!-- FAQ3 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>地方の企業でも対応してもらえますか？</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              オンライン（Zoom・Teamsなど）での対応が可能なため、全国どこからでもご相談いただけます。
+              定期的な訪問が必要な場合は、関東近郊であれば月1〜2回の訪問も可能です。
+              まずはオンラインで無料相談からお気軽にどうぞ。
+            </div>
+          </div>
+
+          <!-- FAQ4 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>契約期間の縛りはありますか？</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              月額サポートプランは最低3ヶ月の契約をお願いしています。3ヶ月後は1ヶ月単位で
+              更新・解約が可能です。プロジェクト型のご依頼については、納品時に完了となります。
+              解約手数料等は一切いただいておりません。
+            </div>
+          </div>
+
+          <!-- FAQ5 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>相談から契約までどのくらい時間がかかりますか？</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              初回無料相談（1時間）→ 現状診断・提案（1〜2週間）→ 契約という流れが一般的です。
+              急ぎの案件については最短1週間以内での契約も対応可能ですので、
+              お気軽にご相談ください。
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTAセクション -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title fade-in">まずは無料相談から始めましょう</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        「どのサービスが自社に合うかわからない」という場合でも大丈夫です。<br>
+        ヒアリング後に最適なプランをご提案します。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-primary btn-lg">無料相談を予約する</a>
+        <a href="works.html" class="btn btn-white btn-lg">導入実績を見る</a>
+      </div>
+      <p class="cta-note">受付時間: 平日 9:00〜18:00（土日祝休）</p>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- フッター（全ページ共通） -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">SampleCompany</span>
+            <span class="footer-brand-sub">株式会社サンプルカンパニー</span>
+          </a>
+          <p class="footer-desc">中小企業のDX推進を専門とするITコンサルティング会社。</p>
+          <div class="footer-sns">
+            <a href="#" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">メニュー</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">サービス</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#consulting">ITコンサルティング</a></li>
+            <li><a href="service.html#cloud">クラウド移行支援</a></li>
+            <li><a href="service.html#development">業務システム開発</a></li>
+            <li><a href="service.html#support">運用・保守サポート</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">会社情報</h3>
+          <address class="footer-nap" style="font-style: normal;">
+            <p class="nap-name">株式会社サンプルカンパニー</p>
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <p class="nap-hours">平日 9:00〜18:00（土日祝休）</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 株式会社サンプルカンパニー All Rights Reserved.</p>
+        <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>

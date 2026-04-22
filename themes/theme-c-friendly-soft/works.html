@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>症例・ギャラリー | にこにこ歯科クリニック</title>
+  <meta name="description" content="にこにこ歯科クリニックの症例・ギャラリーページ。一般歯科・小児歯科・予防・ホワイトニング・矯正の症例写真をご覧いただけます。">
+
+  <link rel="canonical" href="https://example.com/works.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="症例・ギャラリー | にこにこ歯科クリニック">
+  <meta property="og:description" content="一般歯科・小児歯科・予防・ホワイトニング・矯正の症例写真をご覧いただけます。">
+  <meta property="og:url"         content="https://example.com/works.html">
+  <meta property="og:image"       content="https://example.com/images/ogp.png">
+  <meta property="og:site_name"   content="にこにこ歯科クリニック">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dentist",
+        "@id": "https://example.com/#clinic",
+        "name": "にこにこ歯科クリニック",
+        "url": "https://example.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+          {"@type":"ListItem","position":2,"name":"症例・ギャラリー","item":"https://example.com/works.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー（全ページ共通） -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="site-logo__mark" aria-hidden="true">🦷</div>
+        <div class="site-logo__text">
+          <span class="site-logo__name">にこにこ歯科クリニック</span>
+          <span class="site-logo__sub">Nikoniko Dental Clinic</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">クリニック紹介</a></li>
+          <li><a href="service.html">診療内容</a></li>
+          <li><a href="works.html" aria-current="page">症例・ギャラリー</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">ご予約・お問い合わせ</a>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- スライドメニュー（スマホ用） -->
+  <div class="slide-menu" id="slide-menu">
+    <ul class="slide-menu__list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">クリニック紹介</a></li>
+      <li><a href="service.html">診療内容</a></li>
+      <li><a href="works.html">症例・ギャラリー</a></li>
+      <li><a href="news.html">お知らせ</a></li>
+      <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+    </ul>
+    <div class="slide-menu__cta">
+      <a href="contact.html" class="btn btn-primary btn-full">ネット予約はこちら</a>
+    </div>
+    <div class="slide-menu__info">
+      <strong>📞 029-000-0000</strong><br>受付：9:00〜18:00（木・日曜定休）
+    </div>
+  </div>
+  <div class="slide-overlay" id="slide-overlay"></div>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-top: var(--header-height);">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li aria-current="page">症例・ギャラリー</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="page-hero-inner container">
+      <span class="page-hero-label">Gallery</span>
+      <h1 class="page-hero-title">症例・ギャラリー</h1>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         症例ギャラリー
+         ============================================ -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-label">Cases</span>
+          <h2 class="section-title" id="gallery-title">症例・施術ギャラリー</h2>
+          <p class="section-desc">当院で実際に行った治療の症例写真です。掲載はすべて患者様のご同意を得ています。</p>
+        </div>
+
+        <!-- カテゴリフィルター -->
+        <div class="gallery-filter fade-in" role="group" aria-label="カテゴリ絞り込み">
+          <button class="gallery-filter-btn is-active" data-filter="all">すべて</button>
+          <button class="gallery-filter-btn" data-filter="general">一般歯科</button>
+          <button class="gallery-filter-btn" data-filter="children">小児歯科</button>
+          <button class="gallery-filter-btn" data-filter="prevention">予防</button>
+          <button class="gallery-filter-btn" data-filter="whitening">ホワイトニング</button>
+          <button class="gallery-filter-btn" data-filter="orthodontics">矯正</button>
+        </div>
+
+        <!-- ギャラリーグリッド -->
+        <div class="gallery-grid">
+
+          <!-- 一般歯科 -->
+          <article class="gallery-card fade-in" data-category="general">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+01"
+                alt="虫歯治療（コンポジットレジン）症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">一般歯科</span>
+              <p class="gallery-card__title">虫歯治療（コンポジットレジン）<br>歯の色に合わせた自然な仕上がり</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="general">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+02"
+                alt="セラミッククラウン症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">一般歯科</span>
+              <p class="gallery-card__title">セラミッククラウン<br>天然歯に近い透明感と強度</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="general">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+03"
+                alt="歯周病治療後の症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">一般歯科</span>
+              <p class="gallery-card__title">歯周病治療・歯肉の改善<br>歯茎の腫れが引いてすっきり</p>
+            </div>
+          </article>
+
+          <!-- 小児歯科 -->
+          <article class="gallery-card fade-in" data-category="children">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/ffe0eb/ff8fa3?text=Case+04"
+                alt="乳歯の虫歯治療症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-accent-light); color: var(--color-accent-dark);">小児歯科</span>
+              <p class="gallery-card__title">乳歯の虫歯治療<br>白いレジンで目立たず治療</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="children">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/ffe0eb/ff8fa3?text=Case+05"
+                alt="シーラント処置の症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-accent-light); color: var(--color-accent-dark);">小児歯科</span>
+              <p class="gallery-card__title">シーラント（虫歯予防）<br>奥歯の溝を樹脂でブロック</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="children">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/ffe0eb/ff8fa3?text=Case+06"
+                alt="小児歯科クリーニングの様子" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-accent-light); color: var(--color-accent-dark);">小児歯科</span>
+              <p class="gallery-card__title">お子様のPMTC<br>楽しい雰囲気でクリーニング</p>
+            </div>
+          </article>
+
+          <!-- 予防 -->
+          <article class="gallery-card fade-in" data-category="prevention">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+07"
+                alt="歯石除去・スケーリングの症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">予防</span>
+              <p class="gallery-card__title">歯石除去（スケーリング）<br>頑固な歯石をすっきり除去</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="prevention">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+08"
+                alt="PMTC・歯面清掃の様子" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">予防</span>
+              <p class="gallery-card__title">PMTC（専門的クリーニング）<br>毎日のケアでは落とせない汚れを除去</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="prevention">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0f8f5/3ec4b0?text=Case+09"
+                alt="定期健診・口腔内チェックの様子" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category">予防</span>
+              <p class="gallery-card__title">定期健診プログラム<br>3〜6ヶ月ごとのメンテナンス</p>
+            </div>
+          </article>
+
+          <!-- ホワイトニング -->
+          <article class="gallery-card fade-in" data-category="whitening">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/fffbe0/b8860b?text=Case+10"
+                alt="オフィスホワイトニングの症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-yellow-light); color: #8a6500;">ホワイトニング</span>
+              <p class="gallery-card__title">オフィスホワイトニング<br>1回の施術で2〜4段階明るく</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="whitening">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/fffbe0/b8860b?text=Case+11"
+                alt="ホームホワイトニングの症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-yellow-light); color: #8a6500;">ホワイトニング</span>
+              <p class="gallery-card__title">ホームホワイトニング<br>2週間で白くなった症例</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="whitening">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/fffbe0/b8860b?text=Case+12"
+                alt="デュアルホワイトニングの症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-yellow-light); color: #8a6500;">ホワイトニング</span>
+              <p class="gallery-card__title">デュアルホワイトニング<br>オフィス＋ホームの最高効果</p>
+            </div>
+          </article>
+
+          <!-- 矯正 -->
+          <article class="gallery-card fade-in" data-category="orthodontics">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0ecff/4a7dff?text=Case+13"
+                alt="小児矯正の症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-blue-light); color: #2a5dd4;">矯正</span>
+              <p class="gallery-card__title">小児矯正（床矯正）<br>早期介入で自然な顎の発育を促す</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="orthodontics">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0ecff/4a7dff?text=Case+14"
+                alt="マウスピース矯正の症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-blue-light); color: #2a5dd4;">矯正</span>
+              <p class="gallery-card__title">マウスピース矯正（成人）<br>目立たず・取り外し可能</p>
+            </div>
+          </article>
+
+          <article class="gallery-card fade-in" data-category="orthodontics">
+            <div class="gallery-card__img-wrap">
+              <img class="gallery-card__img"
+                src="https://placehold.co/480x360/e0ecff/4a7dff?text=Case+15"
+                alt="矯正後の歯並びの症例" width="480" height="360" loading="lazy">
+            </div>
+            <div class="gallery-card__body">
+              <span class="gallery-card__category" style="background-color: var(--color-blue-light); color: #2a5dd4;">矯正</span>
+              <p class="gallery-card__title">矯正治療完了後<br>きれいな歯並びを取り戻した症例</p>
+            </div>
+          </article>
+
+        </div><!-- /.gallery-grid -->
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="ご予約">
+      <h2 class="cta-title fade-in">あなたのお口の悩み、<br>まずはご相談ください。</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        症例についてご質問がある方もお気軽にどうぞ。<br>
+        カウンセリングは無料で承っています。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-accent btn-lg">ネット予約はこちら</a>
+        <div>
+          <a href="tel:029-000-0000" class="cta-tel">029-000-0000</a>
+          <p class="cta-hours">受付時間: 9:00〜18:00（木・日曜定休）</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター（全ページ共通） -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="footer-logo__name">🦷 にこにこ歯科クリニック</span>
+            <span class="footer-logo__sub">Nikoniko Dental Clinic</span>
+            <p class="footer-desc">お子様から大人まで、笑顔で通えるやさしい歯科医院です。</p>
+          </div>
+          <div>
+            <p class="footer-col-title">Menu</p>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="about.html">クリニック紹介</a></li>
+              <li><a href="service.html">診療内容</a></li>
+              <li><a href="works.html">症例・ギャラリー</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Services</p>
+            <ul class="footer-nav-list">
+              <li><a href="service.html#general">一般歯科・虫歯治療</a></li>
+              <li><a href="service.html#children">小児歯科</a></li>
+              <li><a href="service.html#prevention">予防歯科</a></li>
+              <li><a href="service.html#whitening">ホワイトニング</a></li>
+              <li><a href="service.html#orthodontics">矯正相談</a></li>
+              <li><a href="service.html#denture">入れ歯・義歯</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">Access</p>
+            <address class="footer-nap">
+              <p class="nap-name">にこにこ歯科クリニック</p>
+              <p class="nap-address">〒310-0000<br>茨城県水戸市○○町1-1-1</p>
+              <p class="nap-tel"><a href="tel:029-000-0000">029-000-0000</a></p>
+              <p class="nap-hours">月〜水・金 9:00〜18:00<br>土 9:00〜17:00 / 木・日 休診</p>
+              <div class="nap-review">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJXXXXXXXXXXXXXXXXXXXX"
+                   target="_blank" rel="noopener noreferrer" class="btn btn-review btn-sm">
+                  ★ Googleで口コミを書く
+                </a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">&copy; 2024 にこにこ歯科クリニック All Rights Reserved.</p>
+          <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+
+  <!-- カテゴリフィルタースクリプト -->
+  <script>
+  (function () {
+    var btns  = document.querySelectorAll('.gallery-filter-btn');
+    var cards = document.querySelectorAll('.gallery-card');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+        btns.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        cards.forEach(function (card) {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

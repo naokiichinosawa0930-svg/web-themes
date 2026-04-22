@@ -1,0 +1,11 @@
+# robots.txt - 検索エンジンへのクロール指示ファイル
+# ★ Sitemap の URL を実際のサイトURLに変更してください
+
+User-agent: *
+Allow: /
+
+# プライバシーポリシーはインデックスしない
+Disallow: /privacy.html
+
+# ★ サイトマップURL: 実際のドメインに変更してください
+Sitemap: https://example.com/sitemap.xml

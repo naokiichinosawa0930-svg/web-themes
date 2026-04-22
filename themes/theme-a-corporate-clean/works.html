@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>導入実績 | 株式会社サンプルカンパニー</title>
+  <meta name="description" content="株式会社サンプルカンパニーの導入実績。製造業・小売業・サービス業など様々な業種のDX支援・システム導入事例をご覧いただけます。">
+  <link rel="canonical" href="https://example.com/works.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="導入実績 | 株式会社サンプルカンパニー">
+  <meta property="og:description" content="製造業・小売業・サービス業など様々な業種のDX支援・システム導入事例をご覧いただけます。">
+  <meta property="og:url" content="https://example.com/works.html">
+  <meta property="og:image" content="https://example.com/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="導入実績 | 株式会社サンプルカンパニー">
+  <meta name="twitter:description" content="製造業・小売業・サービス業など様々な業種のDX支援・システム導入事例をご覧いただけます。">
+  <meta name="twitter:image" content="https://example.com/images/ogp.png">
+
+  <!-- GA4（コメントアウト状態） -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"ホーム","item":"https://example.com/"},
+      {"@type":"ListItem","position":2,"name":"導入実績","item":"https://example.com/works.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ヘッダー（全ページ共通） -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo" aria-label="株式会社サンプルカンパニー トップページへ">
+      <span class="site-logo-text">SampleCompany<span class="site-logo-sub">株式会社サンプルカンパニー</span></span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">会社概要</a>
+      <a href="service.html">サービス</a>
+      <a href="works.html" aria-current="page">実績</a>
+      <a href="news.html">お知らせ</a>
+      <a href="contact.html" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">会社概要</a>
+    <a href="service.html">サービス</a>
+    <a href="works.html" aria-current="page">実績</a>
+    <a href="news.html">お知らせ</a>
+    <a href="contact.html" class="nav-cta">お問い合わせ</a>
+  </nav>
+</div>
+<div class="header-offset"></div>
+
+<!-- パンくずリスト -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">ホーム</a></li>
+      <li><span aria-current="page">導入実績</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">導入実績</h1>
+    <p class="page-hero-desc">Works / Case Studies</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- ============================================
+       実績グリッドセクション
+       data-category属性でカテゴリフィルターが動作します
+       カテゴリ値: consulting / cloud / development / support
+       ============================================ -->
+  <section class="section" aria-label="導入実績一覧">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Case Studies</span>
+        <h2 class="section-title">支援実績</h2>
+        <p class="section-desc">業種・規模を問わず、150社以上のDX推進を支援してきました</p>
+      </div>
+
+      <!-- カテゴリフィルターボタン（main.jsで動作） -->
+      <div class="filter-buttons" role="group" aria-label="カテゴリで絞り込み">
+        <button class="filter-btn is-active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="consulting">ITコンサルティング</button>
+        <button class="filter-btn" data-filter="cloud">クラウド移行</button>
+        <button class="filter-btn" data-filter="development">システム開発</button>
+        <button class="filter-btn" data-filter="support">運用サポート</button>
+      </div>
+
+      <!-- ============================================
+           実績グリッド
+           data-category="カテゴリ名" を設定するとフィルターが動作します
+           画像: imagesフォルダの画像に差し替えてください
+           ============================================ -->
+      <div class="works-grid">
+
+        <!-- 実績1 -->
+        <article class="work-item fade-in" data-category="cloud">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/1a5276/ffffff?text=Work+01"
+                 alt="製造業A社 クラウド移行プロジェクト"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">クラウド移行</p>
+            <h3 class="work-title">製造業A社 – オンプレミスからAWSへの全社移行</h3>
+            <p class="work-text">
+              社員80名の製造業。老朽化したサーバー群をAWSへ移行し、
+              インフラコストを年間40%削減。BCP対策も同時に実現。
+            </p>
+          </div>
+        </article>
+
+        <!-- 実績2 -->
+        <article class="work-item fade-in fade-in-delay-1" data-category="development">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/2980b9/ffffff?text=Work+02"
+                 alt="小売業B社 受発注管理システム"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">システム開発</p>
+            <h3 class="work-title">小売業B社 – 受発注管理システムのスクラッチ開発</h3>
+            <p class="work-text">
+              複数拠点の受発注をリアルタイム管理できるシステムを開発。
+              月30時間の工数削減と在庫精度95%→99.5%を達成。
+            </p>
+          </div>
+        </article>
+
+        <!-- 実績3 -->
+        <article class="work-item fade-in fade-in-delay-2" data-category="consulting">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/0e2f44/ffffff?text=Work+03"
+                 alt="飲食チェーンC社 IT戦略策定"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">ITコンサルティング</p>
+            <h3 class="work-title">飲食チェーンC社 – 3ヶ年IT戦略の策定と実行支援</h3>
+            <p class="work-text">
+              20店舗展開の飲食チェーン。POSとEC・予約システムの連携を中心に、
+              3ヶ年のDXロードマップを策定し実行支援中。
+            </p>
+          </div>
+        </article>
+
+        <!-- 実績4 -->
+        <article class="work-item fade-in" data-category="support">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/e67e22/ffffff?text=Work+04"
+                 alt="士業事務所D社 IT運用サポート"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">運用サポート</p>
+            <h3 class="work-title">士業事務所D社 – ITインフラ全体の運用保守サポート</h3>
+            <p class="work-text">
+              弁護士事務所のIT担当者代行として、セキュリティ管理・
+              バックアップ・スタッフへのITサポートをワンストップで提供中。
+            </p>
+          </div>
+        </article>
+
+        <!-- 実績5 -->
+        <article class="work-item fade-in fade-in-delay-1" data-category="development">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/1a5276/ffffff?text=Work+05"
+                 alt="医療機関E社 予約管理システム"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">システム開発</p>
+            <h3 class="work-title">クリニックE院 – オンライン予約・問診システムの構築</h3>
+            <p class="work-text">
+              電話予約中心から24時間オンライン予約へ移行。
+              問診票のデジタル化で受付業務を60%削減し患者満足度も向上。
+            </p>
+          </div>
+        </article>
+
+        <!-- 実績6 -->
+        <article class="work-item fade-in fade-in-delay-2" data-category="cloud">
+          <div class="work-image">
+            <img src="https://placehold.co/600x450/2980b9/ffffff?text=Work+06"
+                 alt="不動産F社 セキュリティ強化"
+                 loading="lazy">
+          </div>
+          <div class="work-body">
+            <p class="work-category">クラウド移行</p>
+            <h3 class="work-title">不動産F社 – クラウドセキュリティの全面強化</h3>
+            <p class="work-text">
+              個人情報を多数扱う不動産業。ゼロトラストセキュリティを導入し、
+              情報漏洩リスクを大幅低減。セキュリティ診断でA評価を取得。
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTAセクション -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title fade-in">貴社の事例も作りませんか？</h2>
+      <p class="cta-desc fade-in fade-in-delay-1">
+        業種・規模・課題はそれぞれ異なります。<br>
+        まずは現状をお聞かせください。最適なアプローチをご提案します。
+      </p>
+      <div class="cta-actions fade-in fade-in-delay-2">
+        <a href="contact.html" class="btn btn-primary btn-lg">無料相談を予約する</a>
+        <a href="service.html" class="btn btn-white btn-lg">サービスを見る</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- フッター（全ページ共通） -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">SampleCompany</span>
+            <span class="footer-brand-sub">株式会社サンプルカンパニー</span>
+          </a>
+          <p class="footer-desc">中小企業のDX推進を専門とするITコンサルティング会社。</p>
+          <div class="footer-sns">
+            <a href="#" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">メニュー</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">サービス</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#consulting">ITコンサルティング</a></li>
+            <li><a href="service.html#cloud">クラウド移行支援</a></li>
+            <li><a href="service.html#development">業務システム開発</a></li>
+            <li><a href="service.html#support">運用・保守サポート</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">会社情報</h3>
+          <address class="footer-nap" style="font-style: normal;">
+            <p class="nap-name">株式会社サンプルカンパニー</p>
+            <p class="nap-address">〒100-0005<br>東京都千代田区丸の内1-1-1<br>サンプルビル10F</p>
+            <p class="nap-tel"><a href="tel:03-0000-0000">03-0000-0000</a></p>
+            <p class="nap-hours">平日 9:00〜18:00（土日祝休）</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 株式会社サンプルカンパニー All Rights Reserved.</p>
+        <nav class="footer-legal"><a href="privacy.html">プライバシーポリシー</a></nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/scroll-animation.js" defer></script>
+
+</body>
+</html>
