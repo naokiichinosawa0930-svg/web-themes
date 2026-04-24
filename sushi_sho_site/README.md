@@ -9,12 +9,8 @@ ValueBind Web制作サービスで制作したウェブサイト一式です。
 ```
 sushi_sho_site/
 ├── index.html        # トップページ
-├── about.html        # 店舗情報・アクセス・こだわり
-├── menu.html         # メニュー全品一覧（タブ切り替え・51品）
-├── photo.html        # フォトギャラリー
-├── news.html         # お知らせ一覧
-├── contact.html      # ご予約・お問い合わせフォーム
-├── privacy.html      # プライバシーポリシー
+├── menu.html         # メニュー全品一覧（タブ切り替え）
+├── contact.html      # お問い合わせ・アクセス（Googleマップ含む）
 ├── robots.txt
 ├── sitemap.xml
 ├── css/
@@ -36,9 +32,7 @@ sushi_sho_site/
 
 | 項目 | 対象ファイル | 内容 |
 |------|------------|------|
-| 料理・店内写真 | 全ページ | Unsplashプレースホルダーをお客様提供の実写真に差し替え |
 | お問い合わせフォーム | contact.html | `action=""` をFormspree等のURLに変更 |
-| Googleマップ埋め込み | about.html | 「Googleマップで見る」外部リンクをiframe埋め込みに変更（任意） |
 | OGP画像 | 全ページ | `images/ogp.jpg` に1200×630pxの画像を配置 |
 | favicon | 全ページ | `favicon.ico` を配置 |
 | Google Analytics | 全ページ | GA4タグを `<head>` 内に追加（取得後） |
@@ -74,14 +68,9 @@ sushi_sho_site/
 
 ---
 
-## AUTO-GENERATEDコメントについて
-
-HTMLファイル内に `<!-- AUTO-GENERATED: お客様確認後に差し替えてください -->` とコメントがある箇所は、画像プレースホルダーが設定されています。お客様提供の実写真に差し替えてください。
-
----
-
 ## 更新履歴
 
 | 日付 | 内容 |
 |------|------|
 | 2026-04-24 | 初版作成 |
+| 2026-04-24 | 3ページ構成に変更（about/photo/news/privacy削除）、既存サイト画像に差し替え、contact.html にアクセスセクション追加 |

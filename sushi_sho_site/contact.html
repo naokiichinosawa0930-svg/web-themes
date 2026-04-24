@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ご予約・お問い合わせ | 日本料理 すし昭｜茨城県日立市十王</title>
-  <meta name="description" content="日本料理すし昭へのご予約・お問い合わせはこちら。お電話（0294-39-3231）またはフォームからどうぞ。コース料理・接待・お祝いのご相談もお気軽に。">
+  <title>お問い合わせ・アクセス｜日本料理 すし昭｜茨城県日立市十王</title>
+  <meta name="description" content="日本料理 すし昭へのご予約・お問い合わせはお電話（0294-39-3231）にてお気軽にどうぞ。アクセス・営業時間・駐車場情報もこちら。">
+  <meta name="keywords" content="すし昭 予約, すし昭 アクセス, 日立市 寿司 予約, 十王駅 日本料理">
   <link rel="canonical" href="https://su-shi-sho.com/contact.html">
-  <meta property="og:title" content="ご予約・お問い合わせ | 日本料理 すし昭">
-  <meta property="og:description" content="お電話またはフォームからご予約・お問い合わせください。">
+  <meta property="og:title" content="お問い合わせ・アクセス｜日本料理 すし昭">
+  <meta property="og:description" content="ご予約・お問い合わせはお電話（0294-39-3231）にて。十王駅徒歩3分、駐車場あり。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://su-shi-sho.com/contact.html">
   <meta property="og:image" content="https://su-shi-sho.com/images/ogp.jpg">
@@ -22,21 +23,215 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <style>
-    .page-hero::before {
-      background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&h=400&fit=crop&auto=format');
-    }
-  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://su-shi-sho.com/"},
-      {"@type": "ListItem", "position": 2, "name": "ご予約・お問い合わせ", "item": "https://su-shi-sho.com/contact.html"}
-    ]
+    "@type": "Restaurant",
+    "name": "日本料理 すし昭",
+    "alternateName": "Sushi Sho",
+    "url": "https://su-shi-sho.com/",
+    "telephone": "0294-39-3231",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "十王町友部東2-2-18",
+      "addressLocality": "日立市",
+      "addressRegion": "茨城県",
+      "postalCode": "319-1303",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "11:30",
+        "closes": "14:00"
+      }
+    ],
+    "servesCuisine": ["日本料理", "寿司", "ふぐ料理", "うなぎ料理"],
+    "priceRange": "¥¥",
+    "description": "十王駅から徒歩3分。親子二代で営む日本料理店。ランチから特別な席まで。",
+    "areaServed": ["日立市", "十王町", "高萩市", "北茨城市"],
+    "sameAs": ["https://www.instagram.com/su_shi_sho/"]
   }
   </script>
+  <style>
+    .page-hero::before {
+      background-image: url('https://cdn.goope.jp/35190/250504011819dnsv_l.jpg');
+      opacity: 0.4;
+    }
+    .tel-hero {
+      background: var(--color-bg-dark);
+      padding: 3.5rem 0 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .tel-hero-label {
+      display: block;
+      font-size: 0.875rem;
+      letter-spacing: 0.15em;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .tel-hero-number {
+      display: inline-block;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--color-white);
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      line-height: 1.1;
+      transition: color 0.2s;
+    }
+    .tel-hero-number:hover { color: var(--color-primary); }
+    .tel-hero-number i {
+      font-size: 0.7em;
+      margin-right: 0.35em;
+      color: var(--color-primary);
+    }
+    .tel-hero-hours {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+      line-height: 1.9;
+    }
+
+    .contact-section {
+      padding: 5rem 0;
+      background: var(--color-bg);
+    }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+    .contact-info-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--color-border);
+      letter-spacing: 0.05em;
+    }
+    .contact-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+    }
+    .contact-info-list li {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--color-text);
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--color-border);
+      line-height: 1.6;
+    }
+    .contact-info-list li:last-child { border-bottom: none; }
+    .info-label {
+      min-width: 5em;
+      color: var(--color-text-light);
+      font-size: 0.8rem;
+      padding-top: 0.1em;
+      flex-shrink: 0;
+    }
+    .contact-note-text {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+    }
+
+    .contact-form { }
+    .form-group { margin-bottom: 1.4rem; }
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+    .form-label .required {
+      color: var(--color-primary);
+      font-size: 0.75rem;
+      margin-left: 0.4em;
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      background: var(--color-bg-dark);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      font-family: var(--font-primary);
+      transition: border-color 0.2s;
+    }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    .form-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+    .form-textarea { resize: vertical; min-height: 130px; }
+    .form-privacy-note {
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+      margin-top: 1rem;
+      line-height: 1.7;
+    }
+    .form-submit { margin-top: 1.8rem; text-align: center; }
+    .form-submit .btn { min-width: 240px; font-size: 1rem; }
+
+    .access-section {
+      padding: 5rem 0;
+      background: var(--color-bg-alt);
+    }
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+    .access-info-block { margin-bottom: 2rem; }
+    .access-info-block:last-child { margin-bottom: 0; }
+    .access-block-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .access-block-body {
+      font-size: 0.925rem;
+      color: var(--color-text);
+      line-height: 1.9;
+    }
+    .access-block-body a {
+      color: var(--color-text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .access-block-body a:hover { color: var(--color-primary); }
+    .access-map iframe { border-radius: 4px; }
+
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .access-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+  </style>
 </head>
 <body>
 
@@ -57,11 +252,8 @@
 <div class="fullscreen-menu" id="fullscreen-menu" role="dialog" aria-modal="true" aria-label="ナビゲーションメニュー">
   <nav class="fullscreen-nav">
     <a href="index.html">ホーム</a>
-    <a href="about.html">店舗情報</a>
     <a href="menu.html">メニュー</a>
-    <a href="photo.html">フォト</a>
-    <a href="news.html">お知らせ</a>
-    <a href="contact.html" aria-current="page" class="menu-cta">ご予約・お問い合わせ</a>
+    <a href="contact.html" aria-current="page" class="menu-cta">お問い合わせ・アクセス</a>
   </nav>
   <div class="menu-footer-info">
     <p>0294-39-3231</p>
@@ -71,203 +263,183 @@
 
 <main>
 
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <div class="container">
-      <ol class="breadcrumb-list">
-        <li><a href="index.html">ホーム</a></li>
-        <li><span aria-current="page">ご予約・お問い合わせ</span></li>
-      </ol>
-    </div>
-  </nav>
-
+  <!-- ページヒーロー -->
   <section class="page-hero">
     <div class="page-hero-inner">
-      <span class="page-hero-en">Reservation &amp; Contact</span>
-      <h1 class="page-hero-title">ご予約・お問い合わせ</h1>
+      <span class="page-hero-en">Contact &amp; Access</span>
+      <h1 class="page-hero-title">お問い合わせ・アクセス</h1>
     </div>
   </section>
 
-  <div class="contact-lead">
-    <div class="contact-lead__inner">
-      <span class="contact-lead__en">Contact</span>
-      <p class="contact-lead__text">
-        ご予約・お問い合わせは、お電話またはフォームからお気軽にどうぞ。<br>
-        コース料理・接待・お祝い事などのご相談もお待ちしております。
-      </p>
-    </div>
+  <!-- 電話番号バナー -->
+  <div class="tel-hero">
+    <span class="tel-hero-label">ご予約・お問い合わせはお電話で</span>
+    <a href="tel:0294393231" class="tel-hero-number">
+      <i class="fa-solid fa-phone" aria-hidden="true"></i>0294-39-3231
+    </a>
+    <p class="tel-hero-hours">
+      営業時間：11:30〜14:00（LO 13:30）　定休日：水曜日<br>
+      コース料理・貸切のご相談もお気軽にどうぞ。
+    </p>
   </div>
 
+  <!-- お問い合わせフォーム -->
   <section class="contact-section">
     <div class="container">
-      <div class="contact-layout">
+      <header class="section-header fade-in">
+        <span class="section-en">Contact Form</span>
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <p class="section-desc">お電話でもお気軽にご予約いただけます。フォームからのお問い合わせは翌営業日以降のご返信となります。</p>
+      </header>
 
-        <!-- 左カラム: 店舗情報 -->
-        <aside class="contact-info" aria-label="店舗情報">
-          <div class="contact-info__block">
-            <span class="contact-info__heading-en">Tel</span>
-            <p class="contact-info__heading">お電話でのご予約</p>
-            <p class="contact-info__tel">
+      <div class="contact-layout">
+        <div class="fade-in">
+          <p class="contact-info-title">ご来店前にご確認ください</p>
+          <ul class="contact-info-list">
+            <li>
+              <span class="info-label">定休日</span>
+              <span>毎週水曜日</span>
+            </li>
+            <li>
+              <span class="info-label">営業時間</span>
+              <span>昼 11:30〜14:00（LO 13:30）</span>
+            </li>
+            <li>
+              <span class="info-label">ランチ</span>
+              <span>1,700円〜（デザート・ドリンク付き）</span>
+            </li>
+            <li>
+              <span class="info-label">コース</span>
+              <span>要ご予約（前日までにお電話で）</span>
+            </li>
+            <li>
+              <span class="info-label">貸切</span>
+              <span>ご相談ください（座敷・個室あり）</span>
+            </li>
+            <li>
+              <span class="info-label">ふぐ</span>
+              <span>11月〜3月の季節限定</span>
+            </li>
+          </ul>
+          <p class="contact-note-text">
+            コース料理や貸切のご予約は、できるだけお早めにお電話にてご連絡ください。フォームからのご予約は確認にお時間をいただく場合があります。
+          </p>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <form class="contact-form" id="contact-form" action="" method="POST" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contact-name">
+                お名前<span class="required">必須</span>
+              </label>
+              <input class="form-input" type="text" id="contact-name" name="name"
+                     placeholder="山田 太郎" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-tel">
+                お電話番号<span class="required">必須</span>
+              </label>
+              <input class="form-input" type="tel" id="contact-tel" name="tel"
+                     placeholder="090-0000-0000" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">
+                メールアドレス
+              </label>
+              <input class="form-input" type="email" id="contact-email" name="email"
+                     placeholder="example@mail.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-type">
+                お問い合わせ種別<span class="required">必須</span>
+              </label>
+              <select class="form-select" id="contact-type" name="type" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="lunch">ランチのご予約</option>
+                <option value="course">コース料理のご予約</option>
+                <option value="charter">貸切のご相談</option>
+                <option value="fugu">ふぐコースのご予約</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">
+                ご要望・メッセージ
+              </label>
+              <textarea class="form-textarea" id="contact-message" name="message"
+                        placeholder="人数・日時のご希望、アレルギーなどがあればご記入ください。"></textarea>
+            </div>
+            <p class="form-privacy-note">
+              ご入力いただいた個人情報はお問い合わせ対応のみに使用します。
+            </p>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                送信する <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="access-section">
+    <div class="container">
+      <header class="section-header fade-in">
+        <span class="section-en">Access</span>
+        <h2 class="section-title">アクセス</h2>
+      </header>
+
+      <div class="access-grid">
+        <div class="fade-in">
+          <div class="access-info-block">
+            <span class="access-block-label">Address</span>
+            <p class="access-block-body">
+              〒319-1303<br>
+              茨城県日立市十王町友部東2-2-18
+            </p>
+          </div>
+          <div class="access-info-block">
+            <span class="access-block-label">Hours</span>
+            <p class="access-block-body">
+              昼 11:30〜14:00（LO 13:30）<br>
+              定休日：毎週水曜日
+            </p>
+          </div>
+          <div class="access-info-block">
+            <span class="access-block-label">Train</span>
+            <p class="access-block-body">
+              JR常磐線 十王駅 東口より<br>
+              徒歩 約3分
+            </p>
+          </div>
+          <div class="access-info-block">
+            <span class="access-block-label">Parking</span>
+            <p class="access-block-body">駐車場あり（無料）</p>
+          </div>
+          <div class="access-info-block">
+            <span class="access-block-label">Seats</span>
+            <p class="access-block-body">
+              カウンター席・椅子席・座敷・個室<br>
+              貸切ご相談可
+            </p>
+          </div>
+          <div class="access-info-block">
+            <span class="access-block-label">Tel</span>
+            <p class="access-block-body">
               <a href="tel:0294393231">0294-39-3231</a>
             </p>
-            <p class="contact-info__note">
-              お電話でのご予約が確実です。<br>
-              コースや特別なシーンのご相談もお気軽にどうぞ。
-            </p>
-          </div>
-          <div class="contact-info__block">
-            <span class="contact-info__heading-en">Hours</span>
-            <p class="contact-info__heading">営業時間・定休日</p>
-            <table class="contact-hours-table">
-              <tbody>
-                <tr>
-                  <th scope="row">昼営業</th>
-                  <td>11:30〜14:00（LO 13:30）</td>
-                </tr>
-                <tr>
-                  <th scope="row">定休日</th>
-                  <td>毎週水曜日</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="contact-info__block">
-            <span class="contact-info__heading-en">Access</span>
-            <p class="contact-info__heading">アクセス</p>
-            <address class="contact-info__address">
-              〒319-1303<br>
-              茨城県日立市十王町友部東2-2-18<br>
-              JR常磐線 十王駅 東口より徒歩約3分
-            </address>
-            <p style="margin-top: 12px;">
-              <a href="https://maps.google.com/?q=茨城県日立市十王町友部東2-2-18" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm">
-                <i class="fa-solid fa-location-arrow" aria-hidden="true"></i> Googleマップで見る
-              </a>
-            </p>
-          </div>
-          <div class="contact-info__block">
-            <span class="contact-info__heading-en">SNS</span>
-            <p class="contact-info__heading">Instagram</p>
-            <a href="https://www.instagram.com/su_shi_sho/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-size: var(--font-size-sm);">
-              <i class="fa-brands fa-instagram" aria-hidden="true"></i> @su_shi_sho
-            </a>
-          </div>
-        </aside>
-
-        <!-- 右カラム: お問い合わせフォーム -->
-        <div>
-          <div class="contact-form-wrap">
-            <div id="form-success" class="form-success" role="alert" aria-live="polite">
-              <div class="form-success__inner">
-                <span class="form-success__en">Thank You</span>
-                <h2 class="form-success__title">送信完了しました</h2>
-                <p class="form-success__text">
-                  お問い合わせいただきありがとうございます。<br>
-                  内容を確認のうえ、担当よりご連絡いたします。
-                </p>
-                <a href="index.html" class="btn btn-outline-dark">トップページへ戻る</a>
-              </div>
-            </div>
-
-            <div id="form-body">
-              <span class="contact-form__heading-en">Reservation &amp; Inquiry</span>
-              <h2 class="contact-form__heading">ご予約・お問い合わせフォーム</h2>
-              <p class="contact-form__note">
-                <span class="form-required">必須</span> のついた項目はご入力が必要です。<br>
-                個人情報の取り扱いについては<a href="privacy.html">プライバシーポリシー</a>をご確認ください。
-              </p>
-
-              <!-- フォーム送信先は未設定。Formspree等のサービスURLに変更してください -->
-              <form id="contact-form" action="" method="post" novalidate>
-
-                <div class="form-group">
-                  <label class="form-label" for="name">
-                    お名前 <span class="form-required">必須</span>
-                  </label>
-                  <input class="form-control" type="text" id="name" name="name"
-                         placeholder="山田 太郎" autocomplete="name" required>
-                  <span class="form-error-msg" id="name-error" aria-live="polite"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="email">
-                    メールアドレス <span class="form-required">必須</span>
-                  </label>
-                  <input class="form-control" type="email" id="email" name="email"
-                         placeholder="example@email.com" autocomplete="email" required>
-                  <span class="form-error-msg" id="email-error" aria-live="polite"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="phone">
-                    電話番号 <span class="form-optional">任意</span>
-                  </label>
-                  <input class="form-control" type="tel" id="phone" name="phone"
-                         placeholder="0294-39-XXXX" autocomplete="tel">
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="reserve-date">
-                    ご予約希望日 <span class="form-optional">任意</span>
-                  </label>
-                  <input class="form-control" type="date" id="reserve-date" name="reserve_date">
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="reserve-time">
-                    ご予約希望時間 <span class="form-optional">任意</span>
-                  </label>
-                  <select class="form-control" id="reserve-time" name="reserve_time">
-                    <option value="">選択してください</option>
-                    <option value="11:30">11:30</option>
-                    <option value="12:00">12:00</option>
-                    <option value="12:30">12:30</option>
-                    <option value="13:00">13:00</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="guests">
-                    ご予約人数 <span class="form-optional">任意</span>
-                  </label>
-                  <select class="form-control" id="guests" name="guests">
-                    <option value="">選択してください</option>
-                    <option value="1">1名</option>
-                    <option value="2">2名</option>
-                    <option value="3">3名</option>
-                    <option value="4">4名</option>
-                    <option value="5">5名</option>
-                    <option value="6">6名以上</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="message">
-                    お問い合わせ内容 <span class="form-required">必須</span>
-                  </label>
-                  <textarea class="form-control" id="message" name="message" rows="6"
-                            placeholder="ご予約の詳細・コース料理のご希望・アレルギーなどがあればご記入ください。" required></textarea>
-                  <span class="form-char-count" id="msg-count">0 / 1000文字</span>
-                  <span class="form-error-msg" id="message-error" aria-live="polite"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-checkbox">
-                    <input type="checkbox" id="privacy-check" name="privacy" required>
-                    <span class="form-checkbox-label">
-                      <a href="privacy.html">プライバシーポリシー</a>に同意する <span class="form-required">必須</span>
-                    </span>
-                  </label>
-                  <span class="form-error-msg" id="privacy-error" aria-live="polite"></span>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-full">
-                  送信する <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                </button>
-              </form>
-            </div>
           </div>
         </div>
 
+        <div class="access-map fade-in fade-in-delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4129.403208473232!2d140.6852175758324!3d36.67009327228451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60217885d7543931%3A0x6f07c34f9d9411b1!2z44GZ44GX5pit!5e1!3m2!1sja!2sjp!4v1777032429741!5m2!1sja!2sjp"
+            width="100%" height="420" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="日本料理 すし昭 地図"></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -277,11 +449,11 @@
 <footer class="site-footer">
   <div class="footer-top">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-grid" style="grid-template-columns: 1.6fr 1fr 1fr;">
         <div>
           <span class="footer-logo-ja">日本料理 すし昭</span>
           <span class="footer-logo-en">Sushi Sho</span>
-          <p class="footer-desc">茨城県日立市十王駅徒歩3分。旬の素材にこだわった寿司と日本料理を親子の職人がご提供します。</p>
+          <p class="footer-desc">茨城県日立市十王駅徒歩3分。親子二代で営む日本料理店です。</p>
           <div class="footer-sns">
             <a href="https://www.instagram.com/su_shi_sho/" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
@@ -301,17 +473,8 @@
           <p class="footer-col-title">Pages</p>
           <ul class="footer-nav-list">
             <li><a href="index.html">ホーム</a></li>
-            <li><a href="about.html">店舗情報</a></li>
             <li><a href="menu.html">メニュー</a></li>
-            <li><a href="photo.html">フォト</a></li>
-            <li><a href="news.html">お知らせ</a></li>
-            <li><a href="contact.html">ご予約・お問い合わせ</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-col-title">Legal</p>
-          <ul class="footer-nav-list">
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="contact.html">お問い合わせ・アクセス</a></li>
           </ul>
         </div>
       </div>
@@ -321,9 +484,6 @@
     <div class="container">
       <div class="footer-bottom-inner">
         <p class="footer-copy">&copy; 2026 日本料理 すし昭 All Rights Reserved.</p>
-        <nav class="footer-legal" aria-label="法的ページ">
-          <a href="privacy.html">プライバシーポリシー</a>
-        </nav>
       </div>
     </div>
   </div>
@@ -333,30 +493,14 @@
 <script src="js/scroll-animation.js"></script>
 <script src="js/form-validation.js"></script>
 <script>
-  // 文字数カウンター
   (function () {
-    var textarea = document.getElementById('message');
-    var counter  = document.getElementById('msg-count');
-    if (textarea && counter) {
-      textarea.addEventListener('input', function () {
-        counter.textContent = textarea.value.length + ' / 1000文字';
-      });
-    }
-
-    // フォーム送信（action未設定時のデモ動作）
     var form    = document.getElementById('contact-form');
-    var success = document.getElementById('form-success');
-    var body    = document.getElementById('form-body');
     if (form) {
       form.addEventListener('submit', function (e) {
-        // action が空の場合はデモとして送信完了を表示
         if (!form.action || form.action === window.location.href) {
           e.preventDefault();
           if (form.checkValidity()) {
-            body.style.display    = 'none';
-            success.style.display = 'block';
-            success.classList.add('is-visible');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            form.innerHTML = '<p style="text-align:center;padding:3rem 0;color:var(--color-primary);font-size:1.1rem;">送信が完了しました。<br><span style="color:var(--color-text-light);font-size:0.9rem;">内容を確認のうえ、担当よりご連絡いたします。</span></p>';
           } else {
             form.reportValidity();
           }
