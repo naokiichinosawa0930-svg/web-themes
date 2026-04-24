@@ -1,0 +1,63 @@
+/* ============================================
+   variables.css - すし昭カスタム配色
+   ダーク統一 × ウォームゴールド × 明朝体
+   ============================================ */
+
+:root {
+  /* アクセントカラー: ウォームゴールド */
+  --color-primary: #C9A96E;
+  --color-primary-dark: #a88540;
+  --color-primary-light: #dfc080;
+
+  /* アクセントカラー（同色） */
+  --color-accent: #C9A96E;
+  --color-accent-dark: #a88540;
+
+  /* 背景: 全ダーク統一 */
+  --color-bg: #1A1A1A;
+  --color-bg-alt: #151515;
+  --color-bg-dark: #0D0D0D;
+  --color-bg-deep: #080808;
+
+  /* テキスト: ライト系 */
+  --color-text: #E8E8E8;
+  --color-text-light: #888888;
+
+  --color-white: #FFFFFF;
+  --color-white-muted: rgba(232, 232, 232, 0.7);
+
+  /* ボーダー */
+  --color-border: #2E2E2E;
+  --color-border-dark: rgba(255, 255, 255, 0.10);
+
+  /* フォント: Noto Serif JP 統一 */
+  --font-primary: 'Noto Serif JP', serif;
+  --font-heading: 'Noto Serif JP', serif;
+  --font-en: 'Noto Serif JP', serif;
+
+  --font-size-base: 16px;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.2rem;
+  --font-size-h3: 1.6rem;
+  --font-size-h4: 1.2rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+
+  /* 余白 */
+  --spacing-section: 100px;
+  --spacing-element: 28px;
+  --spacing-container: 24px;
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+
+  /* デザイン */
+  --border-radius: 2px;
+  --border-radius-lg: 4px;
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+  --transition-speed: 0.4s;
+  --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --header-height: 80px;
+}
